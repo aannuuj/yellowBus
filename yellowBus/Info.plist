@@ -24,6 +24,11 @@
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>googlechromes</string>
+			<string>comgooglemaps</string>
+		</array>
 		<key>UISceneConfigurations</key>
 		<dict>
 			<key>UIWindowSceneSessionRoleApplication</key>
@@ -47,6 +52,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>l</key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -60,5 +67,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWFubnV1aiIsImEiOiJjazVueXZmdmMxZnRrM2twNGtudXdrZWdwIn0.5dpUOa79tHiK6s7qPUk0Xw</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Shows your location on the map and helps us to find yellowBus for you..</string>
 </dict>
 </plist>

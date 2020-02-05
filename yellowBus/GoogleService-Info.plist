@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>762796137458-2m4iol0lll9lc1ummhou12gqn4g343lm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.762796137458-2m4iol0lll9lc1ummhou12gqn4g343lm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>762796137458</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>popcorn.yellowBus</string>
+	<key>PROJECT_ID</key>
+	<string>yellow-bus-c1823</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yellow-bus-c1823.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:762796137458:ios:534e47dd54c106ddcae96b</string>
+	<key>DATABASE_URL</key>
+	<string>https://yellow-bus-c1823.firebaseio.com</string>
+</dict>
+</plist>

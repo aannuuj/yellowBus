@@ -9,10 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
+   
     let segmentedControl : UISegmentedControl = {
      let sc = UISegmentedControl(items: ["Live","Schedule"])
+        
         sc.selectedSegmentIndex = 0
+        sc.addConstraint(
+                NSLayoutConstraint(
+                    item: sc,
+                    attribute: NSLayoutConstraint.Attribute.height,
+                    relatedBy: NSLayoutConstraint.Relation.equal,
+                    toItem: nil,
+                    attribute: NSLayoutConstraint.Attribute.notAnAttribute,
+                    multiplier: 2,
+                    constant: 50.0
+                )
+            )
+  
         return sc
     }()
     
@@ -24,7 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.title = "Shuttle Bus"
+        navigationItem.title = "Yellow Bus"
         let stackView = UIStackView(arrangedSubviews: [
         segmentedControl, tableView
         ])
