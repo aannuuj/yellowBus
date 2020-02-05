@@ -16,6 +16,7 @@
 		BEABEC6123E9F5ED00F629BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */; };
 		BEABEC6C23E9F5ED00F629BE /* yellowBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC6B23E9F5ED00F629BE /* yellowBusTests.swift */; };
 		BEABEC7723E9F5ED00F629BE /* yellowBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */; };
+		BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC8423EA883500F629BE /* UIView+Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BEABEC7223E9F5ED00F629BE /* yellowBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yellowBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellowBusUITests.swift; sourceTree = "<group>"; };
 		BEABEC7823E9F5ED00F629BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEABEC8423EA883500F629BE /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
+				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
 				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
 				BEABEC6223E9F5ED00F629BE /* Info.plist */,
@@ -266,6 +269,7 @@
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
+				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
