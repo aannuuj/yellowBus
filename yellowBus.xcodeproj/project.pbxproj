@@ -20,6 +20,8 @@
 		BEABEC6C23E9F5ED00F629BE /* yellowBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC6B23E9F5ED00F629BE /* yellowBusTests.swift */; };
 		BEABEC7723E9F5ED00F629BE /* yellowBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */; };
 		BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC8423EA883500F629BE /* UIView+Layout.swift */; };
+		BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE18F2D23EB3296001078A4 /* UITabViewController.swift */; };
+		BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE18F2F23EB3423001078A4 /* moreViewController.swift */; };
 		EFCC34900B45F7A530787B8B /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellowBusUITests.swift; sourceTree = "<group>"; };
 		BEABEC7823E9F5ED00F629BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEABEC8423EA883500F629BE /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		BEE18F2D23EB3296001078A4 /* UITabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabViewController.swift; sourceTree = "<group>"; };
+		BEE18F2F23EB3423001078A4 /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.release.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.release.xcconfig"; sourceTree = "<group>"; };
 		CB2A277F75FAE942B91F8F17 /* Pods-yellowBus-yellowBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +154,8 @@
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
+				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
+				BEE18F2D23EB3296001078A4 /* UITabViewController.swift */,
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
 				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
@@ -189,7 +195,6 @@
 				BEABEC4B23E9F5E700F629BE /* Frameworks */,
 				BEABEC4C23E9F5E700F629BE /* Resources */,
 				8D55F0D5BE18E54C61BAE130 /* [CP] Embed Pods Frameworks */,
-				0FF2880485058CF645A912A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +233,6 @@
 				BEABEC6F23E9F5ED00F629BE /* Frameworks */,
 				BEABEC7023E9F5ED00F629BE /* Resources */,
 				56ECD853A22570A0CF63667E /* [CP] Embed Pods Frameworks */,
-				13D0FA0938EA3D49E0609B16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,40 +316,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FF2880485058CF645A912A2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		13D0FA0938EA3D49E0609B16 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		56ECD853A22570A0CF63667E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +425,8 @@
 			files = (
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
+				BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */,
+				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
@@ -632,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				INFOPLIST_FILE = yellowBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -650,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				INFOPLIST_FILE = yellowBus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

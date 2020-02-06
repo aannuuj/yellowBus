@@ -31,8 +31,7 @@ class ViewController: UIViewController {
     }()
     
     let tableView = UITableView(frame: .zero, style: .plain)
-    let live = [
-    "Bus1","Bus2","Bus 2"]
+  
     
         
     override func viewDidLoad() {

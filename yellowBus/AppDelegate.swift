@@ -8,9 +8,9 @@
 
 import UIKit
 import CoreData
-import GoogleMaps
 
-import Firebase
+import FBSDKCoreKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
@@ -20,10 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
          Thread.sleep(forTimeInterval: 2.0)
-    
-        
+
       
-        FirebaseApp.configure()
+ 
         // Override point for customization after application launch.
         return true
     }
@@ -42,6 +41,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    //  AppDelegate.m
+
+    - (BOOL)application:(UIApplication *)application
+        didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+      
+      [[FBSDKApplicationDelegate sharedInstance] application:application
+        didFinishLaunchingWithOptions:launchOptions];
+      // Add any custom logic here.
+      return YES;
+    }
+
+    - (BOOL)application:(UIApplication *)application
+                openURL:(NSURL *)url
+                options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+
+      BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+        openURL:url
+        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+        annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+      ];
+      // Add any custom logic here.
+      return handled;
+    }
+        
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
