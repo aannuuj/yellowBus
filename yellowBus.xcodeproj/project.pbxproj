@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0541BC90168538481F8FE93A /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */; };
 		5C135CD06940E0DE776AEDD6 /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */; };
+		BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */; };
+		BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
@@ -50,6 +52,8 @@
 		3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA1ECCCC709296E8A6CC3F2 /* Pods-yellowBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus_yellowBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
+				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
+				BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */,
 				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
 				BEE18F2D23EB3296001078A4 /* UITabViewController.swift */,
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
@@ -195,6 +201,7 @@
 				BEABEC4B23E9F5E700F629BE /* Frameworks */,
 				BEABEC4C23E9F5E700F629BE /* Resources */,
 				8D55F0D5BE18E54C61BAE130 /* [CP] Embed Pods Frameworks */,
+				C6214081536DB4BE250F132A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +240,7 @@
 				BEABEC6F23E9F5ED00F629BE /* Frameworks */,
 				BEABEC7023E9F5ED00F629BE /* Resources */,
 				56ECD853A22570A0CF63667E /* [CP] Embed Pods Frameworks */,
+				564B4B6336853ACCD4783EC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +302,7 @@
 			files = (
 				BEABEC6123E9F5ED00F629BE /* LaunchScreen.storyboard in Resources */,
 				BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */,
+				BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */,
 				BEABEC5E23E9F5ED00F629BE /* Assets.xcassets in Resources */,
 				BEABEC5923E9F5E700F629BE /* Main.storyboard in Resources */,
 			);
@@ -316,6 +325,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		564B4B6336853ACCD4783EC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56ECD853A22570A0CF63667E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +420,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C6214081536DB4BE250F132A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D789FC7B2D41BBD37909D1AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,6 +470,7 @@
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
 				BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */,
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
+				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,

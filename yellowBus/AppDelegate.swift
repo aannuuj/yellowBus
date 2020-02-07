@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import FacebookCore
+
+
 
 import FBSDKCoreKit
 
@@ -19,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
   var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+         ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
          Thread.sleep(forTimeInterval: 2.0)
 
       
@@ -26,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         // Override point for customization after application launch.
         return true
     }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+                return ApplicationDelegate.shared.application(app, open: url, options: options)
+            }
 
     // MARK: UISceneSession Lifecycle
 

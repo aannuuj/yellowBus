@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
    
     let segmentedControl : UISegmentedControl = {
-     let sc = UISegmentedControl(items: ["Live","Schedule"])
+     let sc = UISegmentedControl(items: ["Live","Schedule","Main"])
         
         sc.selectedSegmentIndex = 0
         sc.addConstraint(

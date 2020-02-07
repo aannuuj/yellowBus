@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZTh-7n-g7Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yG7-b5-2jS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -177,6 +177,55 @@
             </objects>
             <point key="canvasLocation" x="517" y="-1141"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="4So-JH-NiP">
+            <objects>
+                <viewController id="yG7-b5-2jS" customClass="loginViewController" customModule="yellowBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ck7-yq-8EB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="FP2-UT-mA2">
+                                <rect key="frame" x="-154" y="-187" width="790" height="560"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="560" id="LWk-Zu-y64"/>
+                                    <constraint firstAttribute="width" constant="790" id="i4s-SJ-646"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 7" translatesAutoresizingMaskIntoConstraints="NO" id="bhY-5Y-KiR">
+                                <rect key="frame" x="-3" y="189" width="421" height="418"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="421" id="SRF-wX-LEY"/>
+                                    <constraint firstAttribute="height" constant="418" id="jCw-Ha-4L7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="station" translatesAutoresizingMaskIntoConstraints="NO" id="F73-za-P4Y">
+                                <rect key="frame" x="118" y="111" width="179" height="167"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bhY-5Y-KiR" firstAttribute="leading" secondItem="ck7-yq-8EB" secondAttribute="leading" constant="-3" id="6OI-fZ-NDW"/>
+                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="bottom" secondItem="bhY-5Y-KiR" secondAttribute="bottom" constant="255" id="7Fk-Yq-xQ5"/>
+                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="bottom" secondItem="F73-za-P4Y" secondAttribute="bottom" constant="584" id="BPI-lE-0Jh"/>
+                            <constraint firstAttribute="trailing" secondItem="FP2-UT-mA2" secondAttribute="trailing" constant="-222" id="PB6-Wy-A9L"/>
+                            <constraint firstItem="F73-za-P4Y" firstAttribute="leading" secondItem="JMF-Vz-Jt3" secondAttribute="leading" constant="118" id="Q4R-rp-BCf"/>
+                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="trailing" secondItem="F73-za-P4Y" secondAttribute="trailing" constant="117" id="QpL-f3-T5o"/>
+                            <constraint firstItem="F73-za-P4Y" firstAttribute="leading" secondItem="JMF-Vz-Jt3" secondAttribute="leading" constant="118" id="U7D-S2-SVj"/>
+                            <constraint firstItem="FP2-UT-mA2" firstAttribute="leading" secondItem="ck7-yq-8EB" secondAttribute="leading" constant="-154" id="Y8a-d4-lb8"/>
+                            <constraint firstAttribute="trailing" secondItem="bhY-5Y-KiR" secondAttribute="trailing" constant="-4" id="dN9-3E-gNf"/>
+                            <constraint firstItem="F73-za-P4Y" firstAttribute="top" secondItem="JMF-Vz-Jt3" secondAttribute="top" constant="67" id="hiF-Hr-9Gi"/>
+                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="trailing" secondItem="F73-za-P4Y" secondAttribute="trailing" constant="117" id="jPe-q2-VSQ"/>
+                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="bottom" secondItem="FP2-UT-mA2" secondAttribute="bottom" constant="489" id="lVU-fo-21I"/>
+                            <constraint firstItem="FP2-UT-mA2" firstAttribute="top" secondItem="ck7-yq-8EB" secondAttribute="top" constant="-187" id="lcu-uf-Kah"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JMF-Vz-Jt3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwl-vS-G4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3730.434782608696" y="-140.625"/>
+        </scene>
         <!--Yellow Bus-->
         <scene sceneID="86F-py-sL2">
             <objects>
@@ -196,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="-2399" y="-97"/>
         </scene>
-        <!--Cancourse-->
+        <!--Yellow Bus-->
         <scene sceneID="P4G-N5-xtZ">
             <objects>
-                <viewController id="Sei-Ek-Yme" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="Yellow Bus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sei-Ek-Yme" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjY-Xn-2jk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,6 +292,7 @@
                             <outlet property="animation" destination="7Sz-yj-C7Z" id="K2n-Q7-530"/>
                         </connections>
                     </tabBarItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHp-PL-dfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="7Sz-yj-C7Z" customClass="RAMFlipBottomTransitionItemAnimations" customModule="RAMAnimatedTabBarController"/>
@@ -276,10 +326,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle 5" width="497" height="568"/>
+        <image name="Rectangle 7" width="315" height="356"/>
         <image name="ellipsis.circle.fill" catalog="system" width="64" height="60"/>
         <image name="map" catalog="system" width="64" height="56"/>
         <image name="map.fill" catalog="system" width="64" height="56"/>
         <image name="rectangle.3.offgrid" catalog="system" width="64" height="40"/>
         <image name="rectangle.3.offgrid.fill" catalog="system" width="64" height="40"/>
+        <image name="station" width="512" height="512"/>
     </resources>
 </document>
