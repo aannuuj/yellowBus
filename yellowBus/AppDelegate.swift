@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import FacebookCore
 
-
+import GlidingCollection
 
 import FBSDKCoreKit
 
@@ -25,10 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
          ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
          Thread.sleep(forTimeInterval: 2.0)
 
-      
+       setupGlidingCollection()
  
         // Override point for customization after application launch.
         return true
+    }
+    private func setupGlidingCollection() {
+      var config = GlidingConfig.shared
+      config.buttonsFont = UIFont.boldSystemFont(ofSize: 22)
+      config.inactiveButtonsColor = config.activeButtonColor
+      GlidingConfig.shared = config
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
                 return ApplicationDelegate.shared.application(app, open: url, options: options)

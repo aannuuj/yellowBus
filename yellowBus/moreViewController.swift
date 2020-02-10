@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import GlidingCollection
 
 class moreViewController: UITabBarController {
 
-    
+   
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

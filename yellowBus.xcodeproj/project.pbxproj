@@ -11,6 +11,7 @@
 		5C135CD06940E0DE776AEDD6 /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */; };
 		BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */; };
 		BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */; };
+		BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66DDA523F1ACAA00B3260F /* homeViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus_yellowBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
+		BE66DDA523F1ACAA00B3260F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
 				BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */,
 				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
+				BE66DDA523F1ACAA00B3260F /* homeViewController.swift */,
 				BEE18F2D23EB3296001078A4 /* UITabViewController.swift */,
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
@@ -467,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
+				BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */,
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
 				BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */,
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
