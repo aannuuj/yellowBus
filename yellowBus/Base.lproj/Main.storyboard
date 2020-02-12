@@ -37,7 +37,7 @@
         <scene sceneID="ONF-ph-wEE">
             <objects>
                 <navigationController id="jJy-GX-JdN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="More" image="ellipsis.circle.fill" catalog="system" selectedImage="ellipsis.circle.fill" id="vbh-7Y-hNQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="More" image="ellipsis.circle" catalog="system" selectedImage="ellipsis.circle.fill" id="vbh-7Y-hNQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <connections>
                             <outlet property="animation" destination="aFc-yN-XiW" id="gtY-SE-FFd"/>
                         </connections>
@@ -191,26 +191,30 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="mxx-IW-9Mr">
                                 <rect key="frame" x="-221" y="563" width="436" height="206"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxS-ls-xnz">
-                                <rect key="frame" x="189" y="671" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="icons8-facebook-240"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooj-cC-iWk">
+                                <rect key="frame" x="239" y="671" width="40" height="40"/>
+                                <state key="normal" title="Button" image="icons8-github-240"/>
                                 <connections>
-                                    <action selector="facebook:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="NZa-9c-qx2"/>
+                                    <action selector="github:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="j7m-Dp-ju2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="instagram" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-k5-s86">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="instagram" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-k5-s86">
                                 <rect key="frame" x="140" y="671" width="41" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="w9b-1B-lpq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="icons8-instagram-240"/>
                                 <connections>
                                     <action selector="instagram:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="g5C-kp-bIc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-gi-cdR">
-                                <rect key="frame" x="238" y="671" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2T-gi-cdR">
+                                <rect key="frame" x="189" y="671" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="G6M-9V-Ay4"/>
+                                    <constraint firstAttribute="height" constant="40" id="pCi-xe-f1y"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="icons8-linkedin-240"/>
                                 <connections>
                                     <action selector="linkedin:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="2dy-oD-DLS"/>
@@ -258,35 +262,51 @@
                                     <action selector="shareButtontapped:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="mhL-F3-H4f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooj-cC-iWk">
-                                <rect key="frame" x="290" y="671" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="icons8-github-240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envision-3" translatesAutoresizingMaskIntoConstraints="NO" id="euI-cM-PXP">
+                                <rect key="frame" x="32" y="195" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxS-ls-xnz">
+                                <rect key="frame" x="287" y="671" width="41" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Cm7-j0-hxo"/>
+                                    <constraint firstAttribute="height" constant="40" id="l0c-UH-Kbh"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="icons8-facebook-240"/>
                                 <connections>
-                                    <action selector="github:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="j7m-Dp-ju2"/>
+                                    <action selector="facebook:" destination="M0o-Se-4Ty" eventType="touchUpInside" id="NZa-9c-qx2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="s5h-jU-Mv2" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="60" id="1Kz-Ia-yVW"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="firstBaseline" secondItem="ooj-cC-iWk" secondAttribute="firstBaseline" id="21l-Jh-9Nq"/>
+                            <constraint firstItem="L2T-gi-cdR" firstAttribute="leading" secondItem="1B1-k5-s86" secondAttribute="trailing" constant="8" id="45E-vY-hjl"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="bottom" secondItem="s5h-jU-Mv2" secondAttribute="bottom" constant="328" id="4c3-fX-Sd4"/>
                             <constraint firstItem="3lS-2z-tb5" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="66" id="4hl-UC-Aah"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="baseline" secondItem="ooj-cC-iWk" secondAttribute="baseline" id="5O2-bl-r6G"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="bottom" secondItem="mxx-IW-9Mr" secondAttribute="bottom" constant="39" id="6qh-mt-oBg"/>
+                            <constraint firstItem="euI-cM-PXP" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="32" id="7uj-nj-nI2"/>
                             <constraint firstItem="ZbP-qf-uHr" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="391" id="8YB-yr-8gI"/>
                             <constraint firstItem="Qgw-SL-Wgl" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="107" id="A2o-39-6qs"/>
                             <constraint firstItem="mxx-IW-9Mr" firstAttribute="leading" secondItem="pW1-3G-2Fa" secondAttribute="leading" constant="-221" id="AnC-ez-z65"/>
+                            <constraint firstItem="ooj-cC-iWk" firstAttribute="leading" secondItem="L2T-gi-cdR" secondAttribute="trailing" constant="8" id="Dw1-ce-rA6"/>
                             <constraint firstItem="wgd-bp-Acp" firstAttribute="top" secondItem="3lS-2z-tb5" secondAttribute="bottom" constant="247" id="EZv-fM-Vc1"/>
                             <constraint firstAttribute="trailing" secondItem="s5h-jU-Mv2" secondAttribute="trailing" constant="-455" id="FM6-vo-akJ"/>
                             <constraint firstItem="s5h-jU-Mv2" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="87" id="GXE-2M-J9i"/>
                             <constraint firstItem="Tc6-y7-d6D" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="109" id="LJP-tq-Gm2"/>
+                            <constraint firstItem="1B1-k5-s86" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="140" id="Lh6-mi-BBO"/>
                             <constraint firstItem="Qgw-SL-Wgl" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="630" id="Lim-C5-zYU"/>
+                            <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="euI-cM-PXP" secondAttribute="trailing" constant="142" id="Os3-m5-r8Q"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="top" secondItem="Qgw-SL-Wgl" secondAttribute="bottom" constant="12" id="Pvm-y0-Fpl"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="top" secondItem="1B1-k5-s86" secondAttribute="top" id="QC8-Ws-Wye"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="mxx-IW-9Mr" secondAttribute="trailing" constant="199" id="RNf-4s-Kwt"/>
                             <constraint firstItem="s5h-jU-Mv2" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="87" id="SBQ-9Q-nTG"/>
                             <constraint firstItem="ZbP-qf-uHr" firstAttribute="top" secondItem="3lS-2z-tb5" secondAttribute="bottom" constant="233" id="WwZ-yV-dOF"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="ZbP-qf-uHr" secondAttribute="trailing" constant="131" id="XBq-OT-uzD"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="Qgw-SL-Wgl" secondAttribute="trailing" constant="29" id="XIs-J6-Ag6"/>
                             <constraint firstAttribute="trailing" secondItem="s5h-jU-Mv2" secondAttribute="trailing" constant="-455" id="Ynd-el-Wcp"/>
+                            <constraint firstItem="euI-cM-PXP" firstAttribute="top" secondItem="3lS-2z-tb5" secondAttribute="bottom" constant="37" id="cwd-W9-Jdb"/>
                             <constraint firstItem="mxx-IW-9Mr" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="563" id="dKL-u6-xSl"/>
                             <constraint firstItem="mxx-IW-9Mr" firstAttribute="top" secondItem="wgd-bp-Acp" secondAttribute="bottom" constant="119" id="fSs-Au-yAT"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="wgd-bp-Acp" secondAttribute="trailing" constant="205" id="g0y-jG-CXR"/>
@@ -294,14 +314,20 @@
                             <constraint firstItem="ZbP-qf-uHr" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="32" id="hmk-DN-hpY"/>
                             <constraint firstItem="25I-un-vPs" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="32" id="ic4-jX-Ovk"/>
                             <constraint firstItem="ZbP-qf-uHr" firstAttribute="top" secondItem="Tc6-y7-d6D" secondAttribute="bottom" constant="261" id="jMc-N1-DB5"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="leading" secondItem="ooj-cC-iWk" secondAttribute="trailing" constant="8" id="jsi-rB-Tji"/>
+                            <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="MxS-ls-xnz" secondAttribute="trailing" constant="78" id="kio-vw-Pv7"/>
                             <constraint firstItem="s5h-jU-Mv2" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="60" id="lk2-wN-WRH"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="Tc6-y7-d6D" secondAttribute="trailing" constant="204" id="lmW-LQ-1CW"/>
                             <constraint firstItem="25I-un-vPs" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="20" id="nE0-vF-Wfb"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="trailing" secondItem="3lS-2z-tb5" secondAttribute="trailing" constant="164" id="pAp-DR-vjI"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="top" secondItem="ooj-cC-iWk" secondAttribute="top" id="pV9-qh-C54"/>
                             <constraint firstItem="Nqw-L1-rMJ" firstAttribute="bottom" secondItem="ZbP-qf-uHr" secondAttribute="bottom" constant="396" id="qOx-Dw-UDw"/>
+                            <constraint firstItem="1B1-k5-s86" firstAttribute="bottom" secondItem="L2T-gi-cdR" secondAttribute="bottom" id="rPV-AV-nBY"/>
                             <constraint firstItem="wgd-bp-Acp" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="105" id="s5D-Ao-E3B"/>
                             <constraint firstItem="3lS-2z-tb5" firstAttribute="top" secondItem="Nqw-L1-rMJ" secondAttribute="top" constant="122" id="s9m-rR-Cmj"/>
+                            <constraint firstItem="ZbP-qf-uHr" firstAttribute="top" secondItem="euI-cM-PXP" secondAttribute="bottom" constant="68" id="vP0-Rq-mBX"/>
                             <constraint firstItem="Tc6-y7-d6D" firstAttribute="leading" secondItem="Nqw-L1-rMJ" secondAttribute="leading" constant="105" id="xqq-Hl-VhP"/>
+                            <constraint firstItem="MxS-ls-xnz" firstAttribute="bottom" secondItem="1B1-k5-s86" secondAttribute="bottom" id="xxV-ss-VT4"/>
                             <constraint firstItem="mxx-IW-9Mr" firstAttribute="top" secondItem="s5h-jU-Mv2" secondAttribute="bottom" constant="83" id="zu0-fP-KXM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nqw-L1-rMJ"/>
@@ -440,7 +466,9 @@
         <image name="FAVPNG_avatar-user-software-developer_SGhqDNkZ" width="480" height="526"/>
         <image name="Rectangle 5" width="497" height="568"/>
         <image name="Rectangle 7" width="315" height="356"/>
+        <image name="ellipsis.circle" catalog="system" width="64" height="60"/>
         <image name="ellipsis.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="envision-3" width="1043" height="1017"/>
         <image name="icons8-facebook-240" width="240" height="240"/>
         <image name="icons8-github-240" width="240" height="240"/>
         <image name="icons8-instagram-240" width="240" height="240"/>

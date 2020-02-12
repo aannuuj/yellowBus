@@ -47,7 +47,7 @@ class teamViewController: UIViewController {
                             application.open(URL(string: "sms:7972803790")!, options: [:], completionHandler: nil)
                         })
                 
-                        let mapsAction = UIAlertAction(title: "Maps", style: .destructive, handler: { (action) in
+                        let mapsAction = UIAlertAction(title: "Maps", style: .default, handler: { (action) in
                             
                             let targetURL = URL(string: "https://goo.gl/maps/3Q1Go1FDAtWmhzT58")!
                             application.open(targetURL, options: [:], completionHandler: nil)
@@ -67,26 +67,26 @@ class teamViewController: UIViewController {
     }
     
     @IBAction func instagram(_ sender: Any) {
-        if let url = URL(string: "www.instagram.com/aannuuj.felix"){
+         if let url = NSURL(string: "http://www.instagram.com/aannuuj.felix"){
             UIApplication.shared.openURL(url as URL)
     }
     
        }
     
     @IBAction func linkedin(_ sender: Any) {
-        if let url = URL(string: "www.instagram.com/aannuuj.felix"){
+        if let url = URL(string: "https://www.linkedin.com/company/team-envision/"){
                 UIApplication.shared.openURL(url as URL)
         
     }
     }
      @IBAction func github(_ sender: Any) {
-        if let url = URL(string: "www.instagram.com/aannuuj.felix"){
+        if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
                 UIApplication.shared.openURL(url as URL)
         
     }
     }
      @IBAction func facebook(_ sender: Any) {
-        if let url = URL(string: "www.instagram.com/aannuuj.felix"){
+        if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
                 UIApplication.shared.openURL(url as URL)
         
      }

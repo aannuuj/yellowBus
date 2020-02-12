@@ -20,18 +20,18 @@ class scheduleViewController: UIViewController {
     }
     
     @IBAction func Logout(_ sender: Any) {
-           let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .actionSheet)
+           let optionMenu = UIAlertController(title: nil, message: "Thank You for using Yellow Bus", preferredStyle: .actionSheet)
                          
                      // 2
-                     let deleteAction = UIAlertAction(title: "Delete", style: .default)
-                     let saveAction = UIAlertAction(title: "Save", style: .default)
+                     let deleteAction = UIAlertAction(title: "Login in with Other account", style: .default)
+                     
                          
                      // 3
-        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+        let cancelAction = UIAlertAction(title: "Logout", style: .destructive)
                        
                      // 4
                      optionMenu.addAction(deleteAction)
-                     optionMenu.addAction(saveAction)
+                 
                      optionMenu.addAction(cancelAction)
                          
                      // 5
