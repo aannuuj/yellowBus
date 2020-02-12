@@ -11,7 +11,6 @@ import CoreData
 import FacebookCore
 import SwipeCellKit
 import GlidingCollection
-
 import FBSDKCoreKit
 
 

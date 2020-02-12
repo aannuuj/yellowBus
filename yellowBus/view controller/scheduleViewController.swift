@@ -12,12 +12,42 @@ import UIKit
 class scheduleViewController: UIViewController {
 
    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+   override func viewDidLoad() {
+       super.viewDidLoad()
+       self.becomeFirstResponder() // To get shake gesture
+   }
 
-    
-        // Do any additional setup after loading the view.
-    }
+   // We are willing to become first responder to get shake motion
+   override var canBecomeFirstResponder: Bool {
+       get {
+           return true
+       }
+   }
+
+   // Enable detection of shake motion
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+       if motion == .motionShake {
+        let optionMenu = UIAlertController(title: nil, message: "Thank You for using Yellow Bus", preferredStyle: .actionSheet)
+                         
+                     // 2
+                     let deleteAction = UIAlertAction(title: "Rate Us", style: .default)
+        
+                     
+                         
+                     // 3
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+                       
+                     // 4
+                     optionMenu.addAction(deleteAction)
+                 
+                     optionMenu.addAction(cancelAction)
+                         
+                     // 5
+                     self.present(optionMenu, animated: true, completion: nil)
+           
+       }
+   }
+       
     
     @IBAction func Logout(_ sender: Any) {
            let optionMenu = UIAlertController(title: nil, message: "Thank You for using Yellow Bus", preferredStyle: .actionSheet)
@@ -50,3 +80,4 @@ class scheduleViewController: UIViewController {
     */
 
 }
+

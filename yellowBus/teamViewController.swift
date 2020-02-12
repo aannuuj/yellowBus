@@ -9,13 +9,27 @@
 import UIKit
 
 class teamViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.becomeFirstResponder() // To get shake gesture
     }
-    
+
+    // We are willing to become first responder to get shake motion
+    override var canBecomeFirstResponder: Bool {
+        get {
+            return true
+        }
+    }
+
+    // Enable detection of shake motion
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            if let url = NSURL(string: "http://teamenvision.aannuuj.com"){
+                      UIApplication.shared.openURL(url as URL)
+        }
+    }
+    }
     @IBAction func shareButtontapped(_ sender: Any) {
         //Set the default sharing message.
                let message = "Check this amazing app"
