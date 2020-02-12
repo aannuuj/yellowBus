@@ -25,7 +25,7 @@ class teamViewController: UIViewController {
     // Enable detection of shake motion
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
-            if let url = NSURL(string: "http://teamenvision.aannuuj.com"){
+            if let url = NSURL(string: "https://www.aaruush.net/src/credits/index.html"){
                       UIApplication.shared.openURL(url as URL)
         }
     }

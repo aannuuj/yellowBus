@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn" translatesAutoresizingMaskIntoConstraints="NO" id="4dj-jR-8cr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="team_envision" translatesAutoresizingMaskIntoConstraints="NO" id="4dj-jR-8cr">
                                 <rect key="frame" x="95" y="763" width="240" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="iJA-rG-cb4"/>
@@ -50,7 +50,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="popcorn" width="2049" height="481"/>
         <image name="station" width="512" height="512"/>
+        <image name="team_envision" width="1354" height="264"/>
     </resources>
 </document>

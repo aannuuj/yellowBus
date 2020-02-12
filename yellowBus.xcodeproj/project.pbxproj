@@ -14,6 +14,8 @@
 		BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66DDA523F1ACAA00B3260F /* homeViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
+		BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */; };
+		BE80BA8023F49F5E00F4E468 /* MapMarkerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
 		BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5523E9F5E700F629BE /* ViewController.swift */; };
@@ -61,6 +63,8 @@
 		BE66DDA523F1ACAA00B3260F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
+		BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
+		BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapMarkerWindow.swift; path = "/Users/hariompalkar/Desktop/yellowBus/yellowBus/view controller/MapMarkerWindow.swift"; sourceTree = "<absolute>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,7 +165,6 @@
 		BEABEC5023E9F5E700F629BE /* yellowBus */ = {
 			isa = PBXGroup;
 			children = (
-				BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */,
 				BEABEC5123E9F5E700F629BE /* AppDelegate.swift */,
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEF1FDF123F424A100E3E074 /* view controller */,
@@ -172,6 +175,7 @@
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
 				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
+				BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */,
 				BEABEC6223E9F5ED00F629BE /* Info.plist */,
 				BEABEC5A23E9F5E700F629BE /* yellowBus.xcdatamodeld */,
 			);
@@ -201,7 +205,9 @@
 			children = (
 				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
 				BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */,
+				BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */,
 				BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */,
+				BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */,
 				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
 				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
 				BE66DDA523F1ACAA00B3260F /* homeViewController.swift */,
@@ -494,10 +500,12 @@
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
 				BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */,
 				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
+				BE80BA8023F49F5E00F4E468 /* MapMarkerWindow.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
+				BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

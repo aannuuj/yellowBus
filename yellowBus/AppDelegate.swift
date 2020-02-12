@@ -10,9 +10,10 @@ import UIKit
 import CoreData
 import FacebookCore
 import SwipeCellKit
+import Firebase
 import GlidingCollection
 import FBSDKCoreKit
-
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
@@ -23,8 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
          ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
          Thread.sleep(forTimeInterval: 2.0)
-
+        FirebaseApp.configure()
        setupGlidingCollection()
+        GMSServices.provideAPIKey("AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0")
+        
  
         // Override point for customization after application launch.
         return true
