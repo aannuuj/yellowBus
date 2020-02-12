@@ -13,6 +13,7 @@
 		BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */; };
 		BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66DDA523F1ACAA00B3260F /* homeViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
+		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
 		BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5523E9F5E700F629BE /* ViewController.swift */; };
@@ -25,6 +26,8 @@
 		BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC8423EA883500F629BE /* UIView+Layout.swift */; };
 		BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE18F2D23EB3296001078A4 /* UITabViewController.swift */; };
 		BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE18F2F23EB3423001078A4 /* moreViewController.swift */; };
+		BEF1FDEC23F41F9C00E3E074 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */; };
+		BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */; };
 		EFCC34900B45F7A530787B8B /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,7 @@
 		BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
 		BE66DDA523F1ACAA00B3260F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		BEABEC8423EA883500F629BE /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		BEE18F2D23EB3296001078A4 /* UITabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabViewController.swift; sourceTree = "<group>"; };
 		BEE18F2F23EB3423001078A4 /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
+		BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
+		BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cancourseViewController.swift; sourceTree = "<group>"; };
 		C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.release.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.release.xcconfig"; sourceTree = "<group>"; };
 		CB2A277F75FAE942B91F8F17 /* Pods-yellowBus-yellowBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,12 +164,10 @@
 				BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */,
 				BEABEC5123E9F5E700F629BE /* AppDelegate.swift */,
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
-				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
+				BEF1FDF123F424A100E3E074 /* view controller */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
-				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
+				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
 				BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */,
-				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
-				BE66DDA523F1ACAA00B3260F /* homeViewController.swift */,
 				BEE18F2D23EB3296001078A4 /* UITabViewController.swift */,
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
@@ -190,6 +194,19 @@
 				BEABEC7823E9F5ED00F629BE /* Info.plist */,
 			);
 			path = yellowBusUITests;
+			sourceTree = "<group>";
+		};
+		BEF1FDF123F424A100E3E074 /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEABEC5523E9F5E700F629BE /* ViewController.swift */,
+				BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */,
+				BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */,
+				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
+				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
+				BE66DDA523F1ACAA00B3260F /* homeViewController.swift */,
+			);
+			path = "view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,10 +489,13 @@
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
 				BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */,
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
+				BEF1FDEC23F41F9C00E3E074 /* scheduleViewController.swift in Sources */,
 				BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */,
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
+				BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */,
 				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
+				BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import FacebookCore
-
+import SwipeCellKit
 import GlidingCollection
 
 import FBSDKCoreKit
@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         // Override point for customization after application launch.
         return true
     }
+
     private func setupGlidingCollection() {
       var config = GlidingConfig.shared
       config.buttonsFont = UIFont.boldSystemFont(ofSize: 22)
@@ -40,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
                 return ApplicationDelegate.shared.application(app, open: url, options: options)
             }
 
+   
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
