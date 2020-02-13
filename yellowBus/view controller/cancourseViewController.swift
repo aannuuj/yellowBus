@@ -8,11 +8,34 @@
 
 import UIKit
 import Mapbox
- 
+ import Firebase
+ import FirebaseDatabase
+
 class cancourseViewController: UIViewController, MGLMapViewDelegate {
+    
+    
 override func viewDidLoad() {
 super.viewDidLoad()
- 
+//    let ref = Database.database().reference()
+//              ref.observeSingleEvent(of: .value, with: { snapshot in
+//                  for child in snapshot.children {
+//
+//
+//
+//
+//                      for rest in snapshot.children.allObjects as! [DataSnapshot] {
+//                                     guard let Dict = rest.value as? [String: AnyObject] else {
+//                                         continue
+//                                     }
+//                                      let snap = child as! DataSnapshot
+//                                                   let Lat = snap.childSnapshot(forPath: "lat")
+//                                                    let Longi = snap.childSnapshot(forPath: "long")
+//                    }
+//                }
+//    )
+//    }
+    
+//              override func loadView() {
 let url = URL(string: "mapbox://styles/mapbox/streets-v11")
 let mapView = MGLMapView(frame: view.bounds, styleURL: url )
 mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

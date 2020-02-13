@@ -16,6 +16,8 @@
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
 		BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */; };
 		BE80BA8023F49F5E00F4E468 /* MapMarkerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */; };
+		BE80BA8323F4CDFA00F4E468 /* schViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA8123F4CDFA00F4E468 /* schViewController.swift */; };
+		BE80BA8423F4CDFA00F4E468 /* schViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE80BA8223F4CDFA00F4E468 /* schViewController.xib */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
 		BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5523E9F5E700F629BE /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
 		BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
 		BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapMarkerWindow.swift; path = "/Users/hariompalkar/Desktop/yellowBus/yellowBus/view controller/MapMarkerWindow.swift"; sourceTree = "<absolute>"; };
+		BE80BA8123F4CDFA00F4E468 /* schViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schViewController.swift; sourceTree = "<group>"; };
+		BE80BA8223F4CDFA00F4E468 /* schViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = schViewController.xib; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				BE80BA7F23F49F5E00F4E468 /* MapMarkerWindow.swift */,
 				BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */,
 				BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */,
+				BE80BA8123F4CDFA00F4E468 /* schViewController.swift */,
+				BE80BA8223F4CDFA00F4E468 /* schViewController.xib */,
 				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
 				BEE18F2F23EB3423001078A4 /* moreViewController.swift */,
 				BE66DDA523F1ACAA00B3260F /* homeViewController.swift */,
@@ -327,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEABEC6123E9F5ED00F629BE /* LaunchScreen.storyboard in Resources */,
+				BE80BA8423F4CDFA00F4E468 /* schViewController.xib in Resources */,
 				BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */,
 				BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */,
 				BEABEC5E23E9F5ED00F629BE /* Assets.xcassets in Resources */,
@@ -500,6 +507,7 @@
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
 				BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */,
 				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
+				BE80BA8323F4CDFA00F4E468 /* schViewController.swift in Sources */,
 				BE80BA8023F49F5E00F4E468 /* MapMarkerWindow.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */,

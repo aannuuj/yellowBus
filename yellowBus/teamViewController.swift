@@ -10,6 +10,17 @@ import UIKit
 
 class teamViewController: UIViewController {
     
+    @IBOutlet weak var ContactBtn: UILabel!{
+        didSet {
+                  
+               }
+    }
+    var feedbackGenerator : UISelectionFeedbackGenerator? = nil
+    @IBOutlet weak var shareBtn: UIButton!{
+    didSet {
+              
+           }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.becomeFirstResponder() // To get shake gesture
@@ -25,12 +36,14 @@ class teamViewController: UIViewController {
     // Enable detection of shake motion
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
+          
             if let url = NSURL(string: "https://www.aaruush.net/src/credits/index.html"){
                       UIApplication.shared.openURL(url as URL)
         }
     }
     }
     @IBAction func shareButtontapped(_ sender: Any) {
+        
         //Set the default sharing message.
                let message = "Check this amazing app"
                //Set the link to share.
@@ -100,6 +113,7 @@ class teamViewController: UIViewController {
     }
     }
      @IBAction func facebook(_ sender: Any) {
+       
         if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
                 UIApplication.shared.openURL(url as URL)
         
@@ -111,3 +125,6 @@ class teamViewController: UIViewController {
 
 
 }
+
+
+
