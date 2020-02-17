@@ -11,6 +11,7 @@
 		5C135CD06940E0DE776AEDD6 /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */; };
 		BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */; };
 		BE2E418123ED1FAE003C6E1B /* loginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */; };
+		BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C937423F92B0C00753786 /* tableTableViewController.swift */; };
 		BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE66DDA523F1ACAA00B3260F /* homeViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
@@ -32,6 +33,7 @@
 		BEE18F3023EB3423001078A4 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE18F2F23EB3423001078A4 /* moreViewController.swift */; };
 		BEF1FDEC23F41F9C00E3E074 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */; };
 		BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */; };
+		BEF216C023F95A7B00F2623A /* schTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF216BF23F95A7B00F2623A /* schTableViewCell.swift */; };
 		EFCC34900B45F7A530787B8B /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,7 @@
 		A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus_yellowBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = loginViewController.xib; sourceTree = "<group>"; };
+		BE4C937423F92B0C00753786 /* tableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableTableViewController.swift; sourceTree = "<group>"; };
 		BE66DDA523F1ACAA00B3260F /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +92,7 @@
 		BEE18F2F23EB3423001078A4 /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
 		BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cancourseViewController.swift; sourceTree = "<group>"; };
+		BEF216BF23F95A7B00F2623A /* schTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schTableViewCell.swift; sourceTree = "<group>"; };
 		C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.release.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.release.xcconfig"; sourceTree = "<group>"; };
 		CB2A277F75FAE942B91F8F17 /* Pods-yellowBus-yellowBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +177,8 @@
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEF1FDF123F424A100E3E074 /* view controller */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
+				BEF216BF23F95A7B00F2623A /* schTableViewCell.swift */,
+				BE4C937423F92B0C00753786 /* tableTableViewController.swift */,
 				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
 				BE2E417F23ED1FAE003C6E1B /* loginViewController.xib */,
 				BEE18F2D23EB3296001078A4 /* UITabViewController.swift */,
@@ -499,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF216C023F95A7B00F2623A /* schTableViewCell.swift in Sources */,
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
 				BE66DDA623F1ACAA00B3260F /* homeViewController.swift in Sources */,
 				BEABEC5623E9F5E700F629BE /* ViewController.swift in Sources */,
@@ -507,6 +514,7 @@
 				BEE18F2E23EB3296001078A4 /* UITabViewController.swift in Sources */,
 				BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */,
 				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
+				BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */,
 				BE80BA8323F4CDFA00F4E468 /* schViewController.swift in Sources */,
 				BE80BA8023F49F5E00F4E468 /* MapMarkerWindow.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 import FacebookCore
-import SwipeCellKit
+import FoldingCell
 import Firebase
 import GlidingCollection
 import FBSDKCoreKit
