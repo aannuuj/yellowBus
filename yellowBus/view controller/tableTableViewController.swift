@@ -48,9 +48,9 @@ class tableTableViewController: UITableViewController {
     let remindAction = UITableViewRowAction(style: .normal, title: "Remind Me ⏰" , handler: { (action:UITableViewRowAction, indexPath: IndexPath) -> Void in
        // 2
         
-        let remindMenu = UIAlertController(title: nil, message: "Set an Reminder for  \(self.busTime[indexPath .row]) ", preferredStyle: .actionSheet)
+        let remindMenu = UIAlertController(title: nil, message: "Set an Reminder for  \(self.busNo[indexPath .row]) ", preferredStyle: .actionSheet)
        // set alaram code
-       let alramAction = UIAlertAction(title: "Set Reminder", style: .default, handler: nil)
+       let alramAction = UIAlertAction(title: "Set Reminder  \(self.busTime[indexPath .row])", style: .default, handler: nil)
                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
     
        remindMenu.addAction(alramAction)

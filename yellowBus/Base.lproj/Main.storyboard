@@ -415,7 +415,7 @@
         <!--Yellow Bus-->
         <scene sceneID="P4G-N5-xtZ">
             <objects>
-                <viewController storyboardIdentifier="mapVC" title="Yellow Bus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sei-Ek-Yme" customClass="cancourseViewController" customModule="yellowBus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapVC" title="Yellow Bus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sei-Ek-Yme" customClass="gmapViewController" customModule="yellowBus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjY-Xn-2jk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
