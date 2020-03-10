@@ -15,6 +15,8 @@ class scheduleViewController: UIViewController {
    override func viewDidLoad() {
        super.viewDidLoad()
        self.becomeFirstResponder() // To get shake gesture
+    let generator = UINotificationFeedbackGenerator()
+                  generator.notificationOccurred(.success)
    }
 
    // We are willing to become first responder to get shake motion

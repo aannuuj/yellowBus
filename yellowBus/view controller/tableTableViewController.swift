@@ -13,10 +13,13 @@ func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 return 1
 
 }
+
 class tableTableViewController: UITableViewController {
+    
 
     var busNo = ["TN 11 C 1234","TN 11 C 4566","TN 11 BB 5469","TN 39 V 5995","TN 11 U 9999 ","TN 11 C 3939","TN 11 J 9900","TN 11 C 9393"]
     var busTime = ["6.10","7.20","7.35","7.55","8.10","10.10","3.10","4.10"]
+    var assetView = ["back1","back2","back1","back2","back1","back2","back1","back2"]
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.rowHeight = 100
@@ -24,6 +27,12 @@ class tableTableViewController: UITableViewController {
         
         
     }
+  override func viewDidLoad() {
+      super.viewDidLoad()
+      self.becomeFirstResponder() // To get shake gesture
+      let generator = UINotificationFeedbackGenerator()
+                    generator.notificationOccurred(.success)
+  }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as! UIbusTableViewCell
@@ -33,7 +42,7 @@ class tableTableViewController: UITableViewController {
         
 
         cell.busNo.text=busTitle
-       
+      
         cell.busTime.text=busTiming
 
         return cell
@@ -41,7 +50,7 @@ class tableTableViewController: UITableViewController {
         
     }
 
-
+//slider row action
    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
    {
        // 1
@@ -50,7 +59,7 @@ class tableTableViewController: UITableViewController {
         
         let remindMenu = UIAlertController(title: nil, message: "Set an Reminder for  \(self.busNo[indexPath .row]) ", preferredStyle: .actionSheet)
        // set alaram code
-       let alramAction = UIAlertAction(title: "Set Reminder  \(self.busTime[indexPath .row])", style: .default, handler: nil)
+        let alramAction = UIAlertAction(title: "Set Reminder  \(self.busTime[indexPath .row])", style: .default, handler: nil)
                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
     
        remindMenu.addAction(alramAction)
@@ -62,5 +71,29 @@ class tableTableViewController: UITableViewController {
      
        return [remindAction]
    }
+    // Enable detection of shake motion
+        override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+           if motion == .motionShake {
+             
+            let optionMenu = UIAlertController(title: nil, message: "We see that you are willing to request for a ride", preferredStyle: .actionSheet)
+                             
+                         // 2
+                         let deleteAction = UIAlertAction(title: "Contiue with request", style: .default)
+            
+                         
+                             
+                         // 3
+            let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+                           
+                         // 4
+                         optionMenu.addAction(deleteAction)
+                     
+                         optionMenu.addAction(cancelAction)
+                             
+                         // 5
+                         self.present(optionMenu, animated: true, completion: nil)
+               
+           }
+       }
       
 }

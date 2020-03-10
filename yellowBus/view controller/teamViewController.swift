@@ -18,12 +18,15 @@ class teamViewController: UIViewController {
     var feedbackGenerator : UISelectionFeedbackGenerator? = nil
     @IBOutlet weak var shareBtn: UIButton!{
     didSet {
-              
+              let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.warning)
            }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.becomeFirstResponder() // To get shake gesture
+        let generator = UINotificationFeedbackGenerator()
+                      generator.notificationOccurred(.success)
     }
 
     // We are willing to become first responder to get shake motion
@@ -61,21 +64,33 @@ class teamViewController: UIViewController {
     @IBAction func showAlertWithCallMapsMessage(_ sender: Any) {
 
         let application:UIApplication = UIApplication.shared
-                
+                let generator = UISelectionFeedbackGenerator()
+                generator.selectionChanged()
+        
                         let alert = UIAlertController(title: "Team Envision", message: "We are happy to help", preferredStyle: .alert)
                 
                 
                         let callAction = UIAlertAction(title: "Call", style: .default, handler: { (action) in
                             let phoneNumber: String = "tel:/7972803790"
                             application.open(URL(string: phoneNumber)!, options: [:], completionHandler: nil)
+                            let generator = UIImpactFeedbackGenerator(style:.light)
+                            generator.prepare()
+                            generator.impactOccurred()
+                            
                         })
                 
                         let messageAction = UIAlertAction(title: "Message", style: .default, handler: { (action) in
                             application.open(URL(string: "sms:7972803790")!, options: [:], completionHandler: nil)
+                            let generator = UIImpactFeedbackGenerator(style:.light)
+                            generator.prepare()
+                            generator.impactOccurred()
+                            
                         })
                 
                         let mapsAction = UIAlertAction(title: "Maps", style: .default, handler: { (action) in
-                            
+                            let generator = UIImpactFeedbackGenerator(style:.light)
+                            generator.prepare()
+                            generator.impactOccurred()
                             let targetURL = URL(string: "https://goo.gl/maps/3Q1Go1FDAtWmhzT58")!
                             application.open(targetURL, options: [:], completionHandler: nil)
                             
@@ -94,21 +109,29 @@ class teamViewController: UIViewController {
     }
     
     @IBAction func instagram(_ sender: Any) {
-         if let url = NSURL(string: "http://www.instagram.com/aannuuj.felix"){
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+         if let url = NSURL(string: "http://www.instagram.com/teamenvision"){
             UIApplication.shared.openURL(url as URL)
+            
     }
     
        }
     
     @IBAction func linkedin(_ sender: Any) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         if let url = URL(string: "https://www.linkedin.com/company/team-envision/"){
                 UIApplication.shared.openURL(url as URL)
+         
+            
         
     }
     }
      @IBAction func github(_ sender: Any) {
         if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
                 UIApplication.shared.openURL(url as URL)
+           
         
     }
     }
@@ -116,6 +139,8 @@ class teamViewController: UIViewController {
        
         if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
                 UIApplication.shared.openURL(url as URL)
+            let generator = UINotificationFeedbackGenerator()
+                                generator.notificationOccurred(.success)
         
      }
      

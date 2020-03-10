@@ -18,7 +18,6 @@
 		BE7C37CB23FEF6B40039AB26 /* BTC.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE7C37BF23FEF6B30039AB26 /* BTC.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
 		BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */; };
-		BE80BA8423F4CDFA00F4E468 /* schViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE80BA8223F4CDFA00F4E468 /* schViewController.xib */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
 		BEABEC5923E9F5E700F629BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEABEC5723E9F5E700F629BE /* Main.storyboard */; };
@@ -90,7 +89,6 @@
 		BE7C37C823FEF6B40039AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
 		BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
-		BE80BA8223F4CDFA00F4E468 /* schViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = schViewController.xib; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 				BEF1FDF123F424A100E3E074 /* view controller */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
-				BE80BA8223F4CDFA00F4E468 /* schViewController.xib */,
 				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
 				BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */,
 				BEABEC6223E9F5ED00F629BE /* Info.plist */,
@@ -408,7 +405,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEABEC6123E9F5ED00F629BE /* LaunchScreen.storyboard in Resources */,
-				BE80BA8423F4CDFA00F4E468 /* schViewController.xib in Resources */,
 				BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */,
 				BEABEC5E23E9F5ED00F629BE /* Assets.xcassets in Resources */,
 				BEABEC5923E9F5E700F629BE /* Main.storyboard in Resources */,

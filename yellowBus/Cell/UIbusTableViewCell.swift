@@ -16,5 +16,15 @@ class UIbusTableViewCell: UITableViewCell {
     @IBOutlet weak var busRegNo: UILabel!
     @IBOutlet weak var busTime: UILabel!
     
-
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//
+//        let redView = UIView(frame: bounds)
+//        redView.backgroundView = UIimageView(
+//        self.backgroundView = imageView
+//
+//        let blueView = UIView(frame: bounds)
+//        blueView.backgroundColor = #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+//        self.selectedBackgroundView = blueView
+//    }
 }

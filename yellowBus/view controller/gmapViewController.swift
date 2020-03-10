@@ -31,8 +31,9 @@ class gmapViewController: UIViewController, GMSMapViewDelegate {
                             
                         
                         
-                                    let marker = GMSMarker()
-                                    marker.position = CLLocationCoordinate2D(latitude: latitude as! CLLocationCoordinate2D, longitude: longitude as! CLLocationCoordinate2D)
+                        
+//                                    let marker = GMSMarker()
+//                                    marker.position = CLLocationCoordinate2D(latitude: latitude as! CLLocationCoordinate2D, longitude: longitude as! CLLocationCoordinate2D)
 
                                    
                                    

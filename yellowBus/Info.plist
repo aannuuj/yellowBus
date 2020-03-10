@@ -100,5 +100,11 @@
 		<string>googlechromes</string>
 		<string>comgooglemaps</string>
 	</array>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
+	<key></key>
+	<string></string>
 </dict>
 </plist>
