@@ -47,7 +47,7 @@ class teamViewController: UIViewController {
         //Set the default sharing message.
                let message = "Check this amazing app"
                //Set the link to share.
-               if let link = NSURL(string: "http://aannuuj.com")
+               if let link = NSURL(string: "http://")
                {
                 let objectsToShare = [message,link] as [Any]
                    let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)

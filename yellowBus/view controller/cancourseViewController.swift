@@ -39,20 +39,24 @@ super.viewDidLoad()
 let url = URL(string: "mapbox://styles/mapbox/streets-v11")
 let mapView = MGLMapView(frame: view.bounds, styleURL: url )
 mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-mapView.setCenter(CLLocationCoordinate2D(latitude: 40.7326808, longitude: -73.9843407 ), zoomLevel: 20, animated: true)
+mapView.setCenter(CLLocationCoordinate2D(latitude: 35.68476, longitude:-220.24257 ), zoomLevel: 10, animated: true)
     mapView.tintColor = .darkGray
 view.addSubview(mapView)
     // Set the delegate property of our map view to `self` after instantiating it.
     mapView.delegate = self
      
     // Declare the marker `hello` and set its coordinates, title, and subtitle.
-    let hello = MGLPointAnnotation()
-    hello.coordinate = CLLocationCoordinate2D(latitude: 40.7326808, longitude: -73.9843407)
-    hello.title = "Bus 1"
-    hello.subtitle = "Shuttle Bus"
-     
+//    let hello = MGLPointAnnotation()
+//    hello.coordinate = CLLocationCoordinate2D(latitude: 40.7326808, longitude: -73.9843407)
+//    hello.title = "Bus 1"
+//    hello.subtitle = "Shuttle Bus"
+    let coordinates = [
+        CLLocationCoordinate2D(latitude: 35.68476, longitude: -220.24257),
+        CLLocationCoordinate2D(latitude: 37.78428, longitude: -122.41310)
+    ]
+    let polyline = MGLPolyline(coordinates: coordinates, count: UInt(coordinates.count))
     // Add marker `hello` to the map.
-    mapView.addAnnotation(hello)
+//    mapView.addAnnotation(hello)
     }
    
 
