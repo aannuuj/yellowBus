@@ -35,7 +35,6 @@ class teamViewController: UIViewController {
             return true
         }
     }
-
     // Enable detection of shake motion
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
@@ -59,8 +58,6 @@ class teamViewController: UIViewController {
                }
         
     }
-    
-           
     @IBAction func showAlertWithCallMapsMessage(_ sender: Any) {
 
         let application:UIApplication = UIApplication.shared
@@ -102,16 +99,14 @@ class teamViewController: UIViewController {
                         alert.addAction(messageAction)
                         alert.addAction(mapsAction)
                         alert.addAction(cancel)
-               
-                        
+ 
                         self.present(alert, animated: true, completion: nil)
-
     }
     
     @IBAction func instagram(_ sender: Any) {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
-         if let url = NSURL(string: "http://www.instagram.com/teamenvision"){
+         if let url = NSURL(string: "http://www.instagram.com/teamenvision_srm"){
             UIApplication.shared.openURL(url as URL)
             
     }
@@ -124,31 +119,9 @@ class teamViewController: UIViewController {
         if let url = URL(string: "https://www.linkedin.com/company/team-envision/"){
                 UIApplication.shared.openURL(url as URL)
          
-            
-        
     }
     }
-     @IBAction func github(_ sender: Any) {
-        if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
-                UIApplication.shared.openURL(url as URL)
-           
-        
-    }
-    }
-     @IBAction func facebook(_ sender: Any) {
-       
-        if let url = URL(string: "http://www.instagram.com/aannuuj.felix"){
-                UIApplication.shared.openURL(url as URL)
-            let generator = UINotificationFeedbackGenerator()
-                                generator.notificationOccurred(.success)
-        
-     }
-     
-    
-    }
-    
-
-
+ 
 }
 
 

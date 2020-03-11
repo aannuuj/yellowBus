@@ -11,12 +11,13 @@ import CoreData
 import FacebookCore
 
 import Firebase
-
+import GoogleMaps
+import GooglePlaces
 import FBSDKCoreKit
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   var window: UIWindow?
@@ -25,12 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
          ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
          Thread.sleep(forTimeInterval: 2.0)
         FirebaseApp.configure()
+//        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+           
+ GMSServices.provideAPIKey("AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0")
+ return true
       
-//        GMSServices.provideAPIKey("AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0")
-//
- 
-        // Override point for customization after application launch.
-        return true
     }
 
  
