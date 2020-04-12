@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key></key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -16,21 +18,42 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.762796137458-2m4iol0lll9lc1ummhou12gqn4g343lm</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>182011383150148</string>
+	<key>FacebookDisplayName</key>
+	<string>yellowBus</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoiYWFubnV1aiIsImEiOiJjazVueXZmdmMxZnRrM2twNGtudXdrZWdwIn0.5dpUOa79tHiK6s7qPUk0Xw</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Identify your self</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps us to find yellowBus for you..</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>LSApplicationQueriesSchemes</key>
-		<array>
-			<string>googlechromes</string>
-			<string>comgooglemaps</string>
-		</array>
 		<key>CFBundleURLTypes</key>
 		<array>
 			<dict>
@@ -44,6 +67,11 @@
 		<string>182011383150148</string>
 		<key>FacebookDisplayName</key>
 		<string>yellowBus</string>
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>googlechromes</string>
+			<string>comgooglemaps</string>
+		</array>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
@@ -69,6 +97,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -80,31 +110,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>l</key>
-	<string></string>
-	<key>CFBundleURLTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>fb182011383150148</string>
-			</array>
-		</dict>
-	</array>
-	<key>FacebookAppID</key>
-	<string>182011383150148</string>
-	<key>FacebookDisplayName</key>
-	<string>yellowBus</string>
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>googlechromes</string>
-		<string>comgooglemaps</string>
-	</array>
-	<key>NSCalendarsUsageDescription</key>
-	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
-	<key>NSRemindersUsageDescription</key>
-	<string>Help us by giving access to your calender to remind you for the yellowBus.</string>
-	<key></key>
-	<string></string>
 </dict>
 </plist>

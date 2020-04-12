@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0541BC90168538481F8FE93A /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */; };
-		5C135CD06940E0DE776AEDD6 /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */; };
-		BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */; };
+		2F06E2A2113045E31641615F /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */; };
+		6DA0695444DE6AC299560B1F /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */; };
+		7FF6CCC3985907809016CB58 /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F578E963DB0AF2D6C9E73C /* Pods_yellowBus_yellowBusUITests.framework */; };
 		BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C937423F92B0C00753786 /* tableTableViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BE7C37C123FEF6B40039AB26 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */; };
-		BE7C37C423FEF6B40039AB26 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C37C323FEF6B40039AB26 /* TodayViewController.swift */; };
-		BE7C37C723FEF6B40039AB26 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7C37C523FEF6B40039AB26 /* MainInterface.storyboard */; };
-		BE7C37CB23FEF6B40039AB26 /* BTC.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BE7C37BF23FEF6B30039AB26 /* BTC.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
 		BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
@@ -27,20 +24,12 @@
 		BEABEC6C23E9F5ED00F629BE /* yellowBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC6B23E9F5ED00F629BE /* yellowBusTests.swift */; };
 		BEABEC7723E9F5ED00F629BE /* yellowBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */; };
 		BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC8423EA883500F629BE /* UIView+Layout.swift */; };
+		BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC59E82441287200A91F08 /* loginViewController.swift */; };
 		BEDC7393241127CB00E4028A /* UIbusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC7392241127CB00E4028A /* UIbusTableViewCell.swift */; };
-		BEF1FDEC23F41F9C00E3E074 /* scheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */; };
-		BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */; };
-		EFCC34900B45F7A530787B8B /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */; };
+		BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BE7C37C923FEF6B40039AB26 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEABEC4623E9F5E700F629BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE7C37BE23FEF6B30039AB26;
-			remoteInfo = BTC;
-		};
 		BEABEC6823E9F5ED00F629BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BEABEC4623E9F5E700F629BE /* Project object */;
@@ -57,36 +46,17 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		BE7C37CF23FEF6B40039AB26 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				BE7C37CB23FEF6B40039AB26 /* BTC.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		01EFFCA64887F1B064689A63 /* Pods-yellowBus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.debug.xcconfig"; sourceTree = "<group>"; };
+		04F578E963DB0AF2D6C9E73C /* Pods_yellowBus_yellowBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus_yellowBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B5CE1F2043352FADBBA1FDD /* Pods-yellowBus-yellowBusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.release.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.release.xcconfig"; sourceTree = "<group>"; };
-		248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DF51DFEEDDAF1EB6585EE1 /* Pods-yellowBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.release.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.release.xcconfig"; sourceTree = "<group>"; };
-		3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA1ECCCC709296E8A6CC3F2 /* Pods-yellowBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus_yellowBusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		BE4C937423F92B0C00753786 /* tableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableTableViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE7C37BF23FEF6B30039AB26 /* BTC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BTC.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		BE7C37C323FEF6B40039AB26 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		BE7C37C623FEF6B40039AB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		BE7C37C823FEF6B40039AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
 		BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,11 +74,12 @@
 		BEABEC7623E9F5ED00F629BE /* yellowBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellowBusUITests.swift; sourceTree = "<group>"; };
 		BEABEC7823E9F5ED00F629BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEABEC8423EA883500F629BE /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		BEAC59E82441287200A91F08 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../../loginViewController.swift; sourceTree = "<group>"; };
 		BEDC7392241127CB00E4028A /* UIbusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbusTableViewCell.swift; sourceTree = "<group>"; };
-		BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleViewController.swift; sourceTree = "<group>"; };
-		BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cancourseViewController.swift; sourceTree = "<group>"; };
+		BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.release.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.release.xcconfig"; sourceTree = "<group>"; };
 		CB2A277F75FAE942B91F8F17 /* Pods-yellowBus-yellowBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C135CD06940E0DE776AEDD6 /* Pods_yellowBus.framework in Frameworks */,
+				2F06E2A2113045E31641615F /* Pods_yellowBus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCC34900B45F7A530787B8B /* Pods_yellowBusTests.framework in Frameworks */,
+				6DA0695444DE6AC299560B1F /* Pods_yellowBusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0541BC90168538481F8FE93A /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */,
+				7FF6CCC3985907809016CB58 /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,22 +134,12 @@
 		907266F03CA117BD7AFC3864 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				248DBAE60FBF9EAB654A6E25 /* Pods_yellowBus.framework */,
-				A9BB5D51BFC19D30AEAD0E8D /* Pods_yellowBus_yellowBusUITests.framework */,
-				3A0EBC3A1EB058DDB7330D65 /* Pods_yellowBusTests.framework */,
 				BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */,
+				6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */,
+				04F578E963DB0AF2D6C9E73C /* Pods_yellowBus_yellowBusUITests.framework */,
+				D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BE7C37C223FEF6B40039AB26 /* BTC */ = {
-			isa = PBXGroup;
-			children = (
-				BE7C37C323FEF6B40039AB26 /* TodayViewController.swift */,
-				BE7C37C523FEF6B40039AB26 /* MainInterface.storyboard */,
-				BE7C37C823FEF6B40039AB26 /* Info.plist */,
-			);
-			path = BTC;
 			sourceTree = "<group>";
 		};
 		BEABEC4523E9F5E700F629BE = {
@@ -187,7 +148,6 @@
 				BEABEC5023E9F5E700F629BE /* yellowBus */,
 				BEABEC6A23E9F5ED00F629BE /* yellowBusTests */,
 				BEABEC7523E9F5ED00F629BE /* yellowBusUITests */,
-				BE7C37C223FEF6B40039AB26 /* BTC */,
 				BEABEC4F23E9F5E700F629BE /* Products */,
 				79A367D99B72B6E168AAA688 /* Pods */,
 				907266F03CA117BD7AFC3864 /* Frameworks */,
@@ -210,7 +170,8 @@
 			children = (
 				BEABEC5123E9F5E700F629BE /* AppDelegate.swift */,
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
-				BEF1FDF123F424A100E3E074 /* view controller */,
+				BEF2FAE62443873100736131 /* Model */,
+				BEF1FDF123F424A100E3E074 /* Controller */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
 				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
 				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
@@ -218,7 +179,6 @@
 				BEABEC6223E9F5ED00F629BE /* Info.plist */,
 				BEABEC5A23E9F5E700F629BE /* yellowBus.xcdatamodeld */,
 				BEABEC8423EA883500F629BE /* UIView+Layout.swift */,
-				BEDC73952411280200E4028A /* Cell */,
 			);
 			path = yellowBus;
 			sourceTree = "<group>";
@@ -249,17 +209,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		BEF1FDF123F424A100E3E074 /* view controller */ = {
+		BEF1FDF123F424A100E3E074 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BEF1FDEB23F41F9C00E3E074 /* scheduleViewController.swift */,
-				BEF1FDEF23F4249700E3E074 /* cancourseViewController.swift */,
+				BEAC59E82441287200A91F08 /* loginViewController.swift */,
+				BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */,
 				BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */,
 				BE4C937423F92B0C00753786 /* tableTableViewController.swift */,
-				BE2E417E23ED1FAE003C6E1B /* loginViewController.swift */,
 				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
+				BEDC73952411280200E4028A /* Cell */,
 			);
-			path = "view controller";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BEF2FAE62443873100736131 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,14 +257,12 @@
 				BEABEC4A23E9F5E700F629BE /* Sources */,
 				BEABEC4B23E9F5E700F629BE /* Frameworks */,
 				BEABEC4C23E9F5E700F629BE /* Resources */,
-				BE7C37CF23FEF6B40039AB26 /* Embed App Extensions */,
-				4CBC4FE49643F5095EEC7F18 /* [CP] Embed Pods Frameworks */,
-				4D6A24D3A9F8FC7E48CB8218 /* [CP] Copy Pods Resources */,
+				7E77160869A184E3DED6C501 /* [CP] Copy Pods Resources */,
+				DFDE9497AAB429B311F4B31C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BE7C37CA23FEF6B40039AB26 /* PBXTargetDependency */,
 			);
 			name = yellowBus;
 			productName = yellowBus;
@@ -331,8 +296,8 @@
 				BEABEC6E23E9F5ED00F629BE /* Sources */,
 				BEABEC6F23E9F5ED00F629BE /* Frameworks */,
 				BEABEC7023E9F5ED00F629BE /* Resources */,
-				144C5BDDBF45551E3FB2E04C /* [CP] Embed Pods Frameworks */,
-				E3CBE8D6817C3717F1A7BF62 /* [CP] Copy Pods Resources */,
+				9FC1CDD2379B862588B2231F /* [CP] Copy Pods Resources */,
+				5A50BD69959A38EFDC4D10EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,7 +361,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7C37C723FEF6B40039AB26 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +392,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		144C5BDDBF45551E3FB2E04C /* [CP] Embed Pods Frameworks */ = {
+		5A50BD69959A38EFDC4D10EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,40 +407,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CBC4FE49643F5095EEC7F18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D6A24D3A9F8FC7E48CB8218 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71C256B25729264757C9D48C /* [CP] Check Pods Manifest.lock */ = {
@@ -523,6 +453,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7E77160869A184E3DED6C501 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC1CDD2379B862588B2231F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D789FC7B2D41BBD37909D1AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,21 +509,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3CBE8D6817C3717F1A7BF62 /* [CP] Copy Pods Resources */ = {
+		DFDE9497AAB429B311F4B31C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus/Pods-yellowBus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -569,7 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7C37C423FEF6B40039AB26 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,9 +541,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
-				BEF1FDEC23F41F9C00E3E074 /* scheduleViewController.swift in Sources */,
-				BEF1FDF023F4249700E3E074 /* cancourseViewController.swift in Sources */,
-				BE2E418023ED1FAE003C6E1B /* loginViewController.swift in Sources */,
+				BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */,
+				BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */,
 				BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */,
@@ -610,11 +572,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BE7C37CA23FEF6B40039AB26 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE7C37BE23FEF6B30039AB26 /* BTC */;
-			targetProxy = BE7C37C923FEF6B40039AB26 /* PBXContainerItemProxy */;
-		};
 		BEABEC6923E9F5ED00F629BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BEABEC4D23E9F5E700F629BE /* yellowBus */;
@@ -628,14 +585,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE7C37C523FEF6B40039AB26 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE7C37C623FEF6B40039AB26 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		BEABEC5723E9F5E700F629BE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -811,11 +760,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01EFFCA64887F1B064689A63 /* Pods-yellowBus.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				INFOPLIST_FILE = yellowBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -823,7 +772,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = popcorn.yellowBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -831,11 +780,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5CNZGAZC3;
 				INFOPLIST_FILE = yellowBus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -843,7 +792,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = popcorn.yellowBus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
