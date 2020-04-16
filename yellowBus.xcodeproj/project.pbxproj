@@ -10,6 +10,9 @@
 		2F06E2A2113045E31641615F /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */; };
 		6DA0695444DE6AC299560B1F /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */; };
 		7FF6CCC3985907809016CB58 /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F578E963DB0AF2D6C9E73C /* Pods_yellowBus_yellowBusUITests.framework */; };
+		BE3795AD2447ACF70070A196 /* mapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795AC2447ACF70070A196 /* mapStyle.swift */; };
+		BE3795AF2447B0230070A196 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795AE2447B0230070A196 /* brain.swift */; };
+		BE3795B12447B0CC0070A196 /* teamBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795B02447B0CC0070A196 /* teamBrain.swift */; };
 		BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C937423F92B0C00753786 /* tableTableViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BE7C37C123FEF6B40039AB26 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */; };
@@ -53,6 +56,9 @@
 		32DF51DFEEDDAF1EB6585EE1 /* Pods-yellowBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.release.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA1ECCCC709296E8A6CC3F2 /* Pods-yellowBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE3795AC2447ACF70070A196 /* mapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapStyle.swift; sourceTree = "<group>"; };
+		BE3795AE2447B0230070A196 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
+		BE3795B02447B0CC0070A196 /* teamBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamBrain.swift; sourceTree = "<group>"; };
 		BE4C937423F92B0C00753786 /* tableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableTableViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE7C37BF23FEF6B30039AB26 /* BTC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BTC.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +223,9 @@
 				BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */,
 				BE4C937423F92B0C00753786 /* tableTableViewController.swift */,
 				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
+				BE3795B02447B0CC0070A196 /* teamBrain.swift */,
+				BE3795AC2447ACF70070A196 /* mapStyle.swift */,
+				BE3795AE2447B0230070A196 /* brain.swift */,
 				BEDC73952411280200E4028A /* Cell */,
 			);
 			path = Controller;
@@ -541,6 +550,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
+				BE3795AD2447ACF70070A196 /* mapStyle.swift in Sources */,
+				BE3795AF2447B0230070A196 /* brain.swift in Sources */,
 				BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */,
 				BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */,
 				BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */,
@@ -549,6 +560,7 @@
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEDC7393241127CB00E4028A /* UIbusTableViewCell.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
+				BE3795B12447B0CC0070A196 /* teamBrain.swift in Sources */,
 				BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

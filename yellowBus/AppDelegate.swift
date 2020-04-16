@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         GMSServices.provideAPIKey("AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0")
         return true
         
