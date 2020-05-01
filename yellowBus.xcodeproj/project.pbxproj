@@ -18,6 +18,7 @@
 		BE4A2852245C341200B912CE /* schViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A2851245C341200B912CE /* schViewController.swift */; };
 		BE4FD523245C855600AA9647 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FD522245C855600AA9647 /* homeTableViewController.swift */; };
 		BE4FD525245C855900AA9647 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FD524245C855900AA9647 /* loginViewController.swift */; };
+		BE4FD529245C9B7C00AA9647 /* userTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FD528245C9B7B00AA9647 /* userTableViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
 		BE79B09D245377B200CBE857 /* scheduleBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79B09C245377B200CBE857 /* scheduleBrain.swift */; };
 		BE79B0A0245387BE00CBE857 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79B09E245387BE00CBE857 /* ScheduleCell.swift */; };
@@ -36,7 +37,6 @@
 		BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC8423EA883500F629BE /* UIView+Layout.swift */; };
 		BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC59E82441287200A91F08 /* loginViewController.swift */; };
 		BEDC7393241127CB00E4028A /* UIbusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC7392241127CB00E4028A /* UIbusTableViewCell.swift */; };
-		BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +71,7 @@
 		BE4A2851245C341200B912CE /* schViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schViewController.swift; sourceTree = "<group>"; };
 		BE4FD522245C855600AA9647 /* homeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = homeTableViewController.swift; path = /Users/hariompalkar/Documents/ios/yellowBus/yellowBus/Controller/homeTableViewController.swift; sourceTree = "<absolute>"; };
 		BE4FD524245C855900AA9647 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../../loginViewController.swift; sourceTree = "<group>"; };
+		BE4FD528245C9B7B00AA9647 /* userTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userTableViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE79B09C245377B200CBE857 /* scheduleBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleBrain.swift; sourceTree = "<group>"; };
 		BE79B09E245387BE00CBE857 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
@@ -96,7 +97,6 @@
 		BEABEC8423EA883500F629BE /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		BEAC59E82441287200A91F08 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../../loginViewController.swift; sourceTree = "<group>"; };
 		BEDC7392241127CB00E4028A /* UIbusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbusTableViewCell.swift; sourceTree = "<group>"; };
-		BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		C66D33A6239AE9626198A680 /* Pods-yellowBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus.release.xcconfig"; path = "Target Support Files/Pods-yellowBus/Pods-yellowBus.release.xcconfig"; sourceTree = "<group>"; };
 		CB2A277F75FAE942B91F8F17 /* Pods-yellowBus-yellowBusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBus-yellowBusUITests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,9 +246,9 @@
 				BE4A2851245C341200B912CE /* schViewController.swift */,
 				BE2B73FD245B9C01001C2992 /* volViewController.swift */,
 				BE90DADC245B2A0400D86360 /* mapviewController.swift */,
+				BE4FD528245C9B7B00AA9647 /* userTableViewController.swift */,
 				BE4FD522245C855600AA9647 /* homeTableViewController.swift */,
 				BEAC59E82441287200A91F08 /* loginViewController.swift */,
-				BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */,
 				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
 				BEDC73952411280200E4028A /* Cell */,
 			);
@@ -599,6 +599,7 @@
 			files = (
 				BE90DADD245B2A0400D86360 /* mapviewController.swift in Sources */,
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
+				BE4FD529245C9B7C00AA9647 /* userTableViewController.swift in Sources */,
 				BE4FD523245C855600AA9647 /* homeTableViewController.swift in Sources */,
 				BE79B09D245377B200CBE857 /* scheduleBrain.swift in Sources */,
 				BE4A2852245C341200B912CE /* schViewController.swift in Sources */,
@@ -607,7 +608,6 @@
 				BE3795AF2447B0230070A196 /* brain.swift in Sources */,
 				BE79B0A0245387BE00CBE857 /* ScheduleCell.swift in Sources */,
 				BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */,
-				BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */,
 				BE2B73FC245B9BE0001C2992 /* Extension.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
 				BE4FD525245C855900AA9647 /* loginViewController.swift in Sources */,

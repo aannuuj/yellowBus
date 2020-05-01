@@ -7,7 +7,7 @@
 
 import UIKit
 
-class homeTableViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var blurView: UIView!
     override func viewDidLoad() {
