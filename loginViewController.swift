@@ -10,60 +10,58 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class loginViewController: UIViewController, GIDSignInDelegate {
-    var prevSignIn: Bool = true
+public class loginViewController: UIViewController, GIDSignInDelegate {
+    var userManager = NSUserName()
+    
     @IBOutlet weak var googleSignIn: GIDSignInButton!
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var appLabel: UILabel!
     
-    override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(true)
+    override public func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(true)
+       signIn()
+    }
+    func signIn(){
         GIDSignIn.sharedInstance().delegate = self
-      GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-           GIDSignIn.sharedInstance()?.presentingViewController = self
- }
-    override func viewDidLoad() {
-    super.viewDidLoad()
-//        if prevSignIn == true {
-//            googleSignIn.isHidden = true
-//            logoView.isHidden = true
-//             appLabel.isHidden = true
-//        }
-//       else if prevSignIn == false {
-//            googleSignIn.isHidden = false
-//                       logoView.isHidden = false
-//                        appLabel.isHidden = false
-//    }
-     
-  }
-// Present a sign-in with Google window
+               GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+               GIDSignIn.sharedInstance()?.presentingViewController = self
+    }
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+    }
+//    sign in button
     @IBAction func googleSignIn(_ sender: GIDSignInButton!) {
-          GIDSignIn.sharedInstance().signIn()
+        GIDSignIn.sharedInstance().signIn()
     }
-   
-  func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-    print("Google Sing In didSignInForUser")
     
-    if let erroe = error {
-      print(erroe.localizedDescription)
-      return
-    }
-    else {
-        print(user.profile.name as Any)
-        performSegue(withIdentifier: "goToFeed", sender: self)
-    }
-    guard let authentication = user.authentication else { return }
-    let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
-// When user is signed in
-    Auth.auth().signIn(with: credential, completion: { (user, error) in
-      if let e = error {
-        print(e.localizedDescription)
-        return
-      }
+    // sign in function
+    
+    public func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print("Google Sing In didSignInForUser")
         
+        if let errorOne = error {
+            print(errorOne.localizedDescription)
+            return
+        }
+            
+        else {
+            print(user.profile.name as Any)
+            let username = user.profile.name as String?
+            performSegue(withIdentifier: "goToFeed", sender: self)
+        }
         
-    })
-  }
-
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication.accessToken)!)
+        
+        // When user is signed in
+        Auth.auth().signIn(with: credential, completion: { (user, error) in
+            if let e = error {
+                print(e.localizedDescription)
+                return
+            }
+        })
+    }
+    
 }
 

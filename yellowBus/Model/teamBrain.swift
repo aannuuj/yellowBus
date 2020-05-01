@@ -18,8 +18,7 @@ struct Team {
                  let objectsToShare = [message,link] as [Any]
                     let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
                  activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
-              
-               
         }
     }
+
 }

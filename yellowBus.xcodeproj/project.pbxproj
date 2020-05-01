@@ -10,14 +10,21 @@
 		2F06E2A2113045E31641615F /* Pods_yellowBus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */; };
 		6DA0695444DE6AC299560B1F /* Pods_yellowBusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D464837CB294426463CEBD6B /* Pods_yellowBusTests.framework */; };
 		7FF6CCC3985907809016CB58 /* Pods_yellowBus_yellowBusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F578E963DB0AF2D6C9E73C /* Pods_yellowBus_yellowBusUITests.framework */; };
+		BE2B73FC245B9BE0001C2992 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B73FB245B9BE0001C2992 /* Extension.swift */; };
+		BE2B73FE245B9C01001C2992 /* volViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B73FD245B9C01001C2992 /* volViewController.swift */; };
 		BE3795AD2447ACF70070A196 /* mapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795AC2447ACF70070A196 /* mapStyle.swift */; };
 		BE3795AF2447B0230070A196 /* brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795AE2447B0230070A196 /* brain.swift */; };
 		BE3795B12447B0CC0070A196 /* teamBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3795B02447B0CC0070A196 /* teamBrain.swift */; };
-		BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C937423F92B0C00753786 /* tableTableViewController.swift */; };
+		BE4A2852245C341200B912CE /* schViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4A2851245C341200B912CE /* schViewController.swift */; };
+		BE4FD523245C855600AA9647 /* homeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FD522245C855600AA9647 /* homeTableViewController.swift */; };
+		BE4FD525245C855900AA9647 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4FD524245C855900AA9647 /* loginViewController.swift */; };
 		BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */; };
+		BE79B09D245377B200CBE857 /* scheduleBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79B09C245377B200CBE857 /* scheduleBrain.swift */; };
+		BE79B0A0245387BE00CBE857 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE79B09E245387BE00CBE857 /* ScheduleCell.swift */; };
+		BE79B0A1245387BE00CBE857 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE79B09F245387BE00CBE857 /* ScheduleCell.xib */; };
 		BE7C37C123FEF6B40039AB26 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */; };
 		BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7723F4662900F4E468 /* teamViewController.swift */; };
-		BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */; };
+		BE90DADD245B2A0400D86360 /* mapviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE90DADC245B2A0400D86360 /* mapviewController.swift */; };
 		BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5123E9F5E700F629BE /* AppDelegate.swift */; };
 		BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */; };
 		BEABEC5923E9F5E700F629BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEABEC5723E9F5E700F629BE /* Main.storyboard */; };
@@ -56,15 +63,22 @@
 		32DF51DFEEDDAF1EB6585EE1 /* Pods-yellowBusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.release.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B061F2E9C7163A325155870 /* Pods_yellowBus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowBus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA1ECCCC709296E8A6CC3F2 /* Pods-yellowBusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowBusTests.debug.xcconfig"; path = "Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2B73FB245B9BE0001C2992 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		BE2B73FD245B9C01001C2992 /* volViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volViewController.swift; sourceTree = "<group>"; };
 		BE3795AC2447ACF70070A196 /* mapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapStyle.swift; sourceTree = "<group>"; };
 		BE3795AE2447B0230070A196 /* brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain.swift; sourceTree = "<group>"; };
 		BE3795B02447B0CC0070A196 /* teamBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamBrain.swift; sourceTree = "<group>"; };
-		BE4C937423F92B0C00753786 /* tableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableTableViewController.swift; sourceTree = "<group>"; };
+		BE4A2851245C341200B912CE /* schViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schViewController.swift; sourceTree = "<group>"; };
+		BE4FD522245C855600AA9647 /* homeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = homeTableViewController.swift; path = /Users/hariompalkar/Documents/ios/yellowBus/yellowBus/Controller/homeTableViewController.swift; sourceTree = "<absolute>"; };
+		BE4FD524245C855900AA9647 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = ../../loginViewController.swift; sourceTree = "<group>"; };
 		BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BE79B09C245377B200CBE857 /* scheduleBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleBrain.swift; sourceTree = "<group>"; };
+		BE79B09E245387BE00CBE857 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		BE79B09F245387BE00CBE857 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
 		BE7C37BF23FEF6B30039AB26 /* BTC.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BTC.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7C37C023FEF6B40039AB26 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		BE80BA7723F4662900F4E468 /* teamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamViewController.swift; sourceTree = "<group>"; };
-		BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gmapViewController.swift; sourceTree = "<group>"; };
+		BE90DADC245B2A0400D86360 /* mapviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapviewController.swift; sourceTree = "<group>"; };
 		BEABEC4E23E9F5E700F629BE /* yellowBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEABEC5123E9F5E700F629BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +162,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BE79B09B245374AD00CBE857 /* Vieww */ = {
+			isa = PBXGroup;
+			children = (
+				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
+				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
+			);
+			path = Vieww;
+			sourceTree = "<group>";
+		};
 		BEABEC4523E9F5E700F629BE = {
 			isa = PBXGroup;
 			children = (
@@ -177,10 +200,9 @@
 				BEABEC5123E9F5E700F629BE /* AppDelegate.swift */,
 				BEABEC5323E9F5E700F629BE /* SceneDelegate.swift */,
 				BEF2FAE62443873100736131 /* Model */,
+				BE79B09B245374AD00CBE857 /* Vieww */,
 				BEF1FDF123F424A100E3E074 /* Controller */,
 				BEABEC5D23E9F5ED00F629BE /* Assets.xcassets */,
-				BEABEC5723E9F5E700F629BE /* Main.storyboard */,
-				BEABEC5F23E9F5ED00F629BE /* LaunchScreen.storyboard */,
 				BE76D0F723EAB6B0009559CD /* GoogleService-Info.plist */,
 				BEABEC6223E9F5ED00F629BE /* Info.plist */,
 				BEABEC5A23E9F5E700F629BE /* yellowBus.xcdatamodeld */,
@@ -211,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				BEDC7392241127CB00E4028A /* UIbusTableViewCell.swift */,
+				BE79B09E245387BE00CBE857 /* ScheduleCell.swift */,
+				BE79B09F245387BE00CBE857 /* ScheduleCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -218,14 +242,14 @@
 		BEF1FDF123F424A100E3E074 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BE4FD524245C855900AA9647 /* loginViewController.swift */,
+				BE4A2851245C341200B912CE /* schViewController.swift */,
+				BE2B73FD245B9C01001C2992 /* volViewController.swift */,
+				BE90DADC245B2A0400D86360 /* mapviewController.swift */,
+				BE4FD522245C855600AA9647 /* homeTableViewController.swift */,
 				BEAC59E82441287200A91F08 /* loginViewController.swift */,
 				BEF1FDEB23F41F9C00E3E074 /* userViewController.swift */,
-				BE80BA7B23F4993A00F4E468 /* gmapViewController.swift */,
-				BE4C937423F92B0C00753786 /* tableTableViewController.swift */,
 				BE80BA7723F4662900F4E468 /* teamViewController.swift */,
-				BE3795B02447B0CC0070A196 /* teamBrain.swift */,
-				BE3795AC2447ACF70070A196 /* mapStyle.swift */,
-				BE3795AE2447B0230070A196 /* brain.swift */,
 				BEDC73952411280200E4028A /* Cell */,
 			);
 			path = Controller;
@@ -234,6 +258,11 @@
 		BEF2FAE62443873100736131 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BE3795B02447B0CC0070A196 /* teamBrain.swift */,
+				BE3795AC2447ACF70070A196 /* mapStyle.swift */,
+				BE79B09C245377B200CBE857 /* scheduleBrain.swift */,
+				BE2B73FB245B9BE0001C2992 /* Extension.swift */,
+				BE3795AE2447B0230070A196 /* brain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +315,7 @@
 				BEABEC6323E9F5ED00F629BE /* Sources */,
 				BEABEC6423E9F5ED00F629BE /* Frameworks */,
 				BEABEC6523E9F5ED00F629BE /* Resources */,
+				B6645392BB93E1AA88966977 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +411,7 @@
 				BE76D0F823EAB6B0009559CD /* GoogleService-Info.plist in Resources */,
 				BEABEC5E23E9F5ED00F629BE /* Assets.xcassets in Resources */,
 				BEABEC5923E9F5E700F629BE /* Main.storyboard in Resources */,
+				BE79B0A1245387BE00CBE857 /* ScheduleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +527,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBus-yellowBusUITests/Pods-yellowBus-yellowBusUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B6645392BB93E1AA88966977 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yellowBusTests/Pods-yellowBusTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D789FC7B2D41BBD37909D1AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,19 +597,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE90DADD245B2A0400D86360 /* mapviewController.swift in Sources */,
 				BEABEC5C23E9F5E700F629BE /* yellowBus.xcdatamodeld in Sources */,
+				BE4FD523245C855600AA9647 /* homeTableViewController.swift in Sources */,
+				BE79B09D245377B200CBE857 /* scheduleBrain.swift in Sources */,
+				BE4A2852245C341200B912CE /* schViewController.swift in Sources */,
 				BE3795AD2447ACF70070A196 /* mapStyle.swift in Sources */,
+				BE2B73FE245B9C01001C2992 /* volViewController.swift in Sources */,
 				BE3795AF2447B0230070A196 /* brain.swift in Sources */,
+				BE79B0A0245387BE00CBE857 /* ScheduleCell.swift in Sources */,
 				BEAC59E92441287200A91F08 /* loginViewController.swift in Sources */,
 				BEF1FDEC23F41F9C00E3E074 /* userViewController.swift in Sources */,
-				BE4C937523F92B0C00753786 /* tableTableViewController.swift in Sources */,
+				BE2B73FC245B9BE0001C2992 /* Extension.swift in Sources */,
 				BEABEC5223E9F5E700F629BE /* AppDelegate.swift in Sources */,
+				BE4FD525245C855900AA9647 /* loginViewController.swift in Sources */,
 				BE80BA7823F4662900F4E468 /* teamViewController.swift in Sources */,
 				BEABEC5423E9F5E700F629BE /* SceneDelegate.swift in Sources */,
 				BEDC7393241127CB00E4028A /* UIbusTableViewCell.swift in Sources */,
 				BEABEC8523EA883500F629BE /* UIView+Layout.swift in Sources */,
 				BE3795B12447B0CC0070A196 /* teamBrain.swift in Sources */,
-				BE80BA7C23F4993A00F4E468 /* gmapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
