@@ -10,27 +10,29 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-public class loginViewController: UIViewController, GIDSignInDelegate {
-    var userManager = NSUserName()
-    
+ var userManager = NSUserName()
+// MARK:- Outlets
+class loginViewController: UIViewController, GIDSignInDelegate {
     @IBOutlet weak var googleSignIn: GIDSignInButton!
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var appLabel: UILabel!
     
     override public func viewWillAppear(_ animated: Bool) {
-        
         super.viewWillAppear(true)
-       signIn()
+        signIn()
     }
+   // restore sign in function
     func signIn(){
         GIDSignIn.sharedInstance().delegate = self
-               GIDSignIn.sharedInstance()?.restorePreviousSignIn()
-               GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+        GIDSignIn.sharedInstance()?.presentingViewController = self
     }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
     }
-//    sign in button
+    
+    //    MARK: - Sign in setup
     @IBAction func googleSignIn(_ sender: GIDSignInButton!) {
         GIDSignIn.sharedInstance().signIn()
     }
@@ -47,7 +49,6 @@ public class loginViewController: UIViewController, GIDSignInDelegate {
             
         else {
             print(user.profile.name as Any)
-            let username = user.profile.name as String?
             performSegue(withIdentifier: "goToFeed", sender: self)
         }
         

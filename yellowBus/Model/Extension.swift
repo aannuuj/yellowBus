@@ -78,7 +78,7 @@ extension volViewController : UITextFieldDelegate {
 extension volViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-          var selectedImageFromPicker : UIImage? ///  FInal image will be assigned here
+        var _ : UIImage? ///  FInal image will be assigned here
              
              if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
                  visitorImage.image = editedImage
@@ -95,5 +95,48 @@ extension volViewController: UIImagePickerControllerDelegate, UINavigationContro
         print("Cancelled Image picker")
         picker.dismiss(animated: true, completion: nil)
     }
+}
+
+extension userTableViewController{
+    func animation() {
+          
+          gameTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
+          // let's start by drawing a circle somehow
+          
+          let centerMark = center.center
+          
+          // create my track layer
+          let trackLayer = CAShapeLayer()
+          
+          let circularPath = UIBezierPath(arcCenter: centerMark, radius: 120, startAngle: -CGFloat.pi / 7.4, endAngle: 8 * CGFloat.pi, clockwise: false)
+          trackLayer.path = circularPath.cgPath
+          trackLayer.lineWidth = 10
+          trackLayer.fillColor = UIColor.clear.cgColor
+          trackLayer.lineCap = CAShapeLayerLineCap.round
+          view.layer.addSublayer(trackLayer)
+          
+          shapeLayer.path = circularPath.cgPath
+          
+          shapeLayer.strokeColor = UIColor.green.cgColor
+          shapeLayer.lineWidth = 10
+          shapeLayer.fillColor = UIColor.clear.cgColor
+          shapeLayer.lineCap = CAShapeLayerLineCap.round
+          
+          shapeLayer.strokeEnd = 0
+          view.layer.addSublayer(shapeLayer)
+          
+          runTimedCode()
+          
+      }
+     
+      @objc func runTimedCode(){
+          let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
+          basicAnimation.toValue = 20
+          basicAnimation.duration = 30
+          basicAnimation.fillMode = CAMediaTimingFillMode.both
+          basicAnimation.isRemovedOnCompletion = false
+          
+          shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+      }
 }
 

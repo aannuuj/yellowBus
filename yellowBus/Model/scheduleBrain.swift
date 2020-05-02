@@ -42,8 +42,7 @@ struct BusDetails {
             return
         }
         if let safeData = data {
-            let dataString = String(data: safeData, encoding: .utf8)
-            print(dataString)
+            _ = String(data: safeData, encoding: .utf8)
             
         }
     }

@@ -11,12 +11,10 @@
 import UIKit
 import GoogleMaps
 import Firebase
-import FirebaseDatabase
+import FirebaseDatabase // Getting data from firebase
 
 
 class mapViewController : UIViewController, GMSMapViewDelegate {
-    
-
     
     var mapStyle = MapStyle()
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -24,7 +22,6 @@ class mapViewController : UIViewController, GMSMapViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let camera = GMSCameraPosition.camera(withLatitude: 12.82200, longitude:  80.03867, zoom: 15.5)
         let mapView = GMSMapView.map(withFrame: self.view.bounds, camera: camera)
         self.view = mapView
