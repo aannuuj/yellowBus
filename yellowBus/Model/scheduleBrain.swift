@@ -11,9 +11,9 @@ import Alamofire
 
 struct BusDetails {
     
-    var busNo = ["TN 11 C 1234","TN 11 C 4566","TN 11 BB 5469","TN 39 V 5995","TN 11 U 9999 ","TN 11 C 3939","TN 11 J 9900","TN 11 C 9393"]
-    var busTime = ["6:10","7:20","7:35","7:55","8:10","9:10","3:10","4:10"]
-    
+    var busNo = ["1234","4566","5469","5995","9999 ","3939","9900","9393"]
+    var busDeparture = ["6:10","7:20","7:35","7:55","8:10","9:10","3:10","4:10"]
+    var ArivalTime = ["6:15","7:25","7:36","7:59","8:15","9:20","3:10","4:13"]
     let url = "https://jsonplaceholder.typicode.com/posts"
    
     func getData(busNo : String) {

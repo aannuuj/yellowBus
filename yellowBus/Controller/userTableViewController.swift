@@ -40,6 +40,15 @@ class userTableViewController: UITableViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(true)
+            animation()
+        }
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(true)
+            gameTimer?.invalidate()
+        }
+    
     // Enable detection of shake motion
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake {
@@ -53,14 +62,7 @@ class userTableViewController: UITableViewController {
             
         }
     }
-    override func viewWillAppear(_ animated: Bool) {
-           super.viewWillAppear(true)
-           animation()
-       }
-       override func viewWillDisappear(_ animated: Bool) {
-           super.viewWillDisappear(true)
-           gameTimer?.invalidate()
-       }
+ 
     
     @IBAction func signOut(_ sender: UIButton) {
         showSignOut()

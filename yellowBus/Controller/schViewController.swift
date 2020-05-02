@@ -24,8 +24,8 @@ class schViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     {
         let remindAction = UITableViewRowAction(style: .normal, title: "⏰" , handler: { (action:UITableViewRowAction, indexPath: IndexPath) -> Void in
             
-            let remindMenu = UIAlertController(title: nil, message: "Set an ⏰ Reminder for  \( busDetail.busNo[indexPath .row]) ", preferredStyle: .actionSheet)
-            let alramAction = UIAlertAction(title: "Set Reminder  \(busDetail.busTime[indexPath .row])", style: .default, handler: { action in busDetail.setAlarm()})
+            let remindMenu = UIAlertController(title: nil, message: "Set an ⏰ Reminder for Bus No \( busDetail.busNo[indexPath .row]) ", preferredStyle: .actionSheet)
+            let alramAction = UIAlertAction(title: "Set Reminder  \(busDetail.busDeparture[indexPath .row])", style: .default, handler: { action in busDetail.setAlarm()})
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             remindMenu.addAction(alramAction)
             remindMenu.addAction(cancelAction)
@@ -43,10 +43,12 @@ class schViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleCell", for: indexPath) as! UIbusTableViewCell
-        let busTitle = busDetail.busNo[indexPath .row]
-        let busTiming = busDetail.busTime[indexPath .row]
-        cell.busNo.text=busTitle
-        cell.busTime.text=busTiming
+        let busNumber = busDetail.busNo[indexPath .row]
+        let departureTiming = busDetail.busDeparture[indexPath .row]
+        let arivalTiming = busDetail.ArivalTime[indexPath .row]
+        cell.busNo.text=busNumber
+        cell.DepartureTime.text=departureTiming
+        cell.ArivalTime.text=arivalTiming
         return cell
     }
 }

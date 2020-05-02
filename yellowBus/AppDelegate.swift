@@ -36,9 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-  
+  // 1
+             let storyboard = UIStoryboard(name: "Login", bundle: .main)
+
+             // 2
+             if let initialViewController = storyboard.instantiateInitialViewController() {
+                 print("already login")
+                 window?.rootViewController = initialViewController
+                 // 4
+                 window?.makeKeyAndVisible()
+             }
         GMSServices.provideAPIKey("AIzaSyC5P7VRBfOA3t_-kHld1I2xdL3mRij9OG0")
         return true
+   
         
     }
     @available(iOS 9.0, *)

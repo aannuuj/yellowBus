@@ -49,7 +49,7 @@ class loginViewController: UIViewController, GIDSignInDelegate {
             
         else {
             print(user.profile.name as Any)
-            performSegue(withIdentifier: "goToFeed", sender: self)
+          //  performSegue(withIdentifier: "goToFeed", sender: self)
         }
         
         guard let authentication = user.authentication else { return }
