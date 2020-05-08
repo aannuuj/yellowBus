@@ -15,4 +15,5 @@ struct AppBrain {
               generator.notificationOccurred(.success)
     }
     
+    
 }

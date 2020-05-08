@@ -25,7 +25,7 @@ class userTableViewController: UITableViewController {
         userImageFormat()
         self.becomeFirstResponder()
         navigationItem.title = "Profile"
-        animation()
+//        animation()
     }
     
     func userImageFormat(){
@@ -42,11 +42,11 @@ class userTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(true)
-            animation()
+//            animation()
         }
         override func viewWillDisappear(_ animated: Bool) {
             super.viewWillDisappear(true)
-            gameTimer?.invalidate()
+//            gameTimer?.invalidate()
         }
     
     // Enable detection of shake motion

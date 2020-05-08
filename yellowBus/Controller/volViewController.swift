@@ -18,9 +18,9 @@ class volViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        visitorImage.image = #imageLiteral(resourceName: "icons8-github-240")
+        visitorImage.image = #imageLiteral(resourceName: "Volenteer")
         hideKeyboardWhenTappedAround()
-        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
+//        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
     }
     // keyboard setup
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +56,7 @@ class volViewController: UIViewController {
     }
     
     func clearData(){
-        visitorImage.image = #imageLiteral(resourceName: "icons8-github-240")
+        visitorImage.image = #imageLiteral(resourceName: "Volenteer")
         addImageView.isHidden = false
         visitorName.text?.removeAll()
         visitorNumber.text?.removeAll()

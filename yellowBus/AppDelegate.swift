@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
              // 2
              if let initialViewController = storyboard.instantiateInitialViewController() {
-                 print("already login")
+  
                  window?.rootViewController = initialViewController
                  // 4
                  window?.makeKeyAndVisible()

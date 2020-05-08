@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yG7-b5-2jS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pAc-PH-Uae">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -8,41 +8,47 @@
     </dependencies>
     <scenes>
         <!--Login View Controller-->
-        <scene sceneID="4So-JH-NiP">
+        <scene sceneID="mox-Ta-qfU">
             <objects>
-                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yG7-b5-2jS" customClass="loginViewController" customModule="yellowBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ck7-yq-8EB">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pAc-PH-Uae" customClass="loginViewController" customModule="yellowBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2vc-6z-RKO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4Z-Hi-er9">
-                                <rect key="frame" x="84" y="682" width="247" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="SEr-Jc-sCM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11f-If-QHT">
+                                <rect key="frame" x="84" y="682" width="246" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title=" Sign In With Google">
-                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="googleSignIn:" destination="yG7-b5-2jS" eventType="touchUpInside" id="geZ-Wy-ADa"/>
+                                    <action selector="googleSignIn:" destination="pAc-PH-Uae" eventType="touchUpInside" id="yls-gv-1As"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIp-oP-Xk4">
+                                <rect key="frame" x="133" y="607" width="149" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Sign In With Apple">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J4Z-Hi-er9" firstAttribute="centerX" secondItem="ck7-yq-8EB" secondAttribute="centerX" id="3YC-eS-QzV"/>
-                            <constraint firstItem="JMF-Vz-Jt3" firstAttribute="bottom" secondItem="J4Z-Hi-er9" secondAttribute="bottom" constant="126" id="Hv7-TC-zWq"/>
-                            <constraint firstItem="J4Z-Hi-er9" firstAttribute="leading" secondItem="JMF-Vz-Jt3" secondAttribute="leading" constant="84" id="y05-jn-nsr"/>
+                            <constraint firstItem="11f-If-QHT" firstAttribute="centerX" secondItem="2vc-6z-RKO" secondAttribute="centerX" id="1o5-wy-P7B"/>
+                            <constraint firstItem="Hbq-9F-UzY" firstAttribute="bottom" secondItem="11f-If-QHT" secondAttribute="bottom" constant="126" id="L4X-Ip-1tN"/>
+                            <constraint firstItem="11f-If-QHT" firstAttribute="leading" secondItem="Hbq-9F-UzY" secondAttribute="leading" constant="84" id="fo0-yI-aNM"/>
+                            <constraint firstItem="11f-If-QHT" firstAttribute="top" secondItem="Hbq-9F-UzY" secondAttribute="top" constant="638" id="xHv-VE-2gQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="JMF-Vz-Jt3"/>
+                        <viewLayoutGuide key="safeArea" id="Hbq-9F-UzY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HyC-Yl-mim"/>
+                    <navigationItem key="navigationItem" id="GZP-va-uGQ"/>
                     <connections>
-                        <outlet property="googleSignIn" destination="J4Z-Hi-er9" id="CyQ-4C-R5p"/>
+                        <outlet property="googleSignIn" destination="11f-If-QHT" id="MK4-a3-sXO"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwl-vS-G4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7v-6y-Dud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2404" y="693"/>
         </scene>

@@ -8,15 +8,10 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
     @IBOutlet weak var blurView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         blurView.layer.cornerRadius = 30
         blurView.clipsToBounds = true
-      
     }
-
- 
-
 }

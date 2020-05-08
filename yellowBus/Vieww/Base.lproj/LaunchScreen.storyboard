@@ -14,52 +14,8 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="team_envision" translatesAutoresizingMaskIntoConstraints="NO" id="4dj-jR-8cr">
-                                <rect key="frame" x="95" y="763" width="240" height="72"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="iJA-rG-cb4"/>
-                                    <constraint firstAttribute="width" constant="240" id="yVb-zX-cMb"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="station" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-Ly-nZU">
-                                <rect key="frame" x="9" y="272" width="396" height="211"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="396" id="1iP-lD-ahf"/>
-                                    <constraint firstAttribute="height" constant="211" id="aMd-OC-s4Q"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbm-NV-mTO">
-                                <rect key="frame" x="145" y="491" width="125" height="23"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="Jec-Yv-LlP"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Yellow Bus">
-                                        <attributes>
-                                            <color key="NSColor" red="0.98946899180000003" green="0.78068768980000003" blue="0.42221641539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstItem="Nbm-NV-mTO" firstAttribute="centerX" secondItem="P3J-Ly-nZU" secondAttribute="centerX" id="3Tb-mO-DfA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4dj-jR-8cr" secondAttribute="trailing" constant="79" id="3qL-71-1YP"/>
-                            <constraint firstItem="Nbm-NV-mTO" firstAttribute="top" secondItem="P3J-Ly-nZU" secondAttribute="bottom" constant="8" id="4x2-04-Zzx"/>
-                            <constraint firstItem="Nbm-NV-mTO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="Boq-yB-ptg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P3J-Ly-nZU" secondAttribute="trailing" constant="9" id="Ic5-Wp-M1c"/>
-                            <constraint firstItem="4dj-jR-8cr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="TM6-HM-T1A"/>
-                            <constraint firstItem="P3J-Ly-nZU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="YAQ-CP-H42"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4dj-jR-8cr" secondAttribute="bottom" constant="27" id="d5w-qu-2zq"/>
-                            <constraint firstItem="P3J-Ly-nZU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="228" id="mjR-YV-V9A"/>
-                            <constraint firstItem="4dj-jR-8cr" firstAttribute="top" secondItem="P3J-Ly-nZU" secondAttribute="bottom" constant="280" id="zuq-PW-wu5"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -68,8 +24,4 @@
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="station" width="512" height="512"/>
-        <image name="team_envision" width="1354" height="264"/>
-    </resources>
 </document>

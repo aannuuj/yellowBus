@@ -22,7 +22,10 @@ class schViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     //slider row action
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
     {
-        let remindAction = UITableViewRowAction(style: .normal, title: "⏰" , handler: { (action:UITableViewRowAction, indexPath: IndexPath) -> Void in
+        let remindAction = UITableViewRowAction(style: .default, title: "Remind Me", handler: { (action:UITableViewRowAction, indexPath: IndexPath) -> Void in
+            
+//         remindAction.image = UIImage(named: "icon.png")
+//           remindAction.backgroundColor = UIColor.BrandYellow
             
             let remindMenu = UIAlertController(title: nil, message: "Set an ⏰ Reminder for Bus No \( busDetail.busNo[indexPath .row]) ", preferredStyle: .actionSheet)
             let alramAction = UIAlertAction(title: "Set Reminder  \(busDetail.busDeparture[indexPath .row])", style: .default, handler: { action in busDetail.setAlarm()})
@@ -37,7 +40,7 @@ class schViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // MARK: - UITableView Delegates & Data source
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tableView.rowHeight = 100 // sell height
+        tableView.rowHeight = 100 // cell height
         return busDetail.busNo.count
     }
     
